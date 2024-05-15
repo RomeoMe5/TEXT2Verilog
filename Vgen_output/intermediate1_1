@@ -1,0 +1,42 @@
+// This is a half adder.
+module half_adder( 
+input a, b,
+output cout, sum ); 
+
+assign sum = a ^ b;
+assign cout = a & b; 
+
+endmodule 
+
+
+// This is a full adder.
+module full_adder( 
+input a, b, cin,
+output cout, sum ); 
+
+assign sum = a ^ b ^ cin;
+assign cout = (a & b) | (a & cin) | (b & cin); 
+
+endmodule 
+
+
+// This is a ripple carry adder. 
+module ripple_carry_adder( 
+input a, b, cin,
+output cout, sum ); 
+
+assign sum = a ^ b ^ cin;
+assign cout = (a & b) | (a & cin) | (b & cin); 
+
+endmodule 
+
+
+// This is a ripple carry adder. 
+module ripple_carry_adder( 
+input a, b, cin,
+output cout, sum ); 
+
+assign sum = a ^ b ^ cin;
+assign cout = (a & b) | (a & cin) | (b & cin); 
+
+endmodule 

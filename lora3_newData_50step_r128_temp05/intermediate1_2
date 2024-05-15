@@ -1,0 +1,11 @@
+// This is a half adder.
+module half_adder( 
+input a, b,
+output cout, sum );
+// A half adder adds two bits and produces a sum and carry-out. 
+// Since there are no carries-in, the cout is always 0.
+assign cout = 0;
+// The sum is just the XOR of the two inputs.
+assign sum = a^b;
+endmodule
+                                                                     

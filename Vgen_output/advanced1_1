@@ -1,0 +1,11 @@
+// This is a signed adder that adds two 8-bit 2's complement numbers. It also captures a signed overflow. 
+module signed_adder(input [7:0] a, input [7:0] b, output [7:0] s, output overflow );  // This is the top-level module. 
+wire [7:0] a_plus_b;  // This is a wire that holds the sum of a and b. 
+wire [7:0] a_minus_b; // This is a wire that holds the difference of a and b. 
+wire [7:0] b_minus_a; // This is a wire that holds the difference of b and a. 
+wire [7:0] a_plus_b_minus_b;  // This is a wire that holds the difference of a_plus_b and b. 
+wire [7:0] a_minus_b_minus_a; // This is a wire that holds the difference of a_minus_b and a. 
+wire [7:0] a_minus_b_minus_b; // This is a wire that holds the difference of a_minus_b and b. 
+wire [7:0] b_minus_a_minus_b; // This is a wire that holds the difference of b_minus_a and b. 
+wire [7:0] b_minus_a_minus_a; // This is a wire that holds the difference of b_minus_a and a. 
+wire [7:0] a_plus_b_minus_b_minus_a; // This is a wire that holds the difference of a

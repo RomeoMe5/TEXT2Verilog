@@ -1,0 +1,27 @@
+// This is a module that assigns the output to the input
+module wire_assign( input in, output out );
+// assign the output to the input
+
+
+// This is a module that assigns the output to the input, but with a delay
+module wire_assign_delay( input in, output out,
+						  parameter D=0 );
+// assign the output to the input, with a delay
+
+
+// This is a module that assigns the output to the input, but with a delay
+// and a reversed direction
+module wire_assign_reverse_delay( input in, output out,
+								  parameter D=0 );
+// assign the output to the input, with a delay and reversed direction
+
+
+// This is a module that assigns the output to the input, but with a delay
+// and a reversed direction, and inverted logic level
+module wire_assign_reverse_delay_inv( input in, output out,
+									  parameter D=0 );
+// assign the output to the input, with a delay, reversed direction, and inverted logic level
+
+
+// This is a module that assigns the output to the input, but with a delay
+// and a reversed direction, and invert

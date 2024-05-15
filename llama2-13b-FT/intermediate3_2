@@ -1,0 +1,30 @@
+// This is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value;
+// r_reg is reset to 1 and is updated to r_next otherwise
+// feedback_value is concatenated with r_next for the update
+always @(posedge clk) begin
+	if (reset)
+		r_reg <= 1;
+	else
+		r_reg <= r_next;
+end
+
+// r_next is the next state of the LFSR
+// The LFSR is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+// The taps are connected to the output q
+// The taps are connected to the input of the LFSR in a feedback loop
+// The LFSR is updated when the output of the LFSR is zero
+// The LFSR is not updated when the output of the LFSR is not zero
+// The LFSR is updated when the output of the LFSR is zero
+// The LFSR is not updated when the output of the LFSR is not zero
+// The LFSR is updated when the output of the LFSR is zero
+// The LFSR is not updated when the output of the LFSR is not zero
+// The LFSR is updated when the output of the LFSR is zero
+// The LFSR

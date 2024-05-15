@@ -1,0 +1,26 @@
+module adv_fsm(
+input clk,
+input reset,
+input x,
+output z ); 
+reg [1:0] present_state, next_state;
+parameter IDLE=0, S1=1, S10=2, S101=3;
+
+always @(posedge clk)
+	if (reset)
+		present_state <= IDLE;
+	else 
+		present_state <= next_state;
+		
+	assign z = (present_state==S101);
+	
+	always_comb begin
+		case (present_state)
+			IDLE: next_state = x ? S1 : IDLE;
+			S1: next_state = x ? S10 : S1;
+			S10: next_state = x ? S101 : S10;
+			S101: next_state = IDLE;
+		endcase
+	end
+	
+endmodule

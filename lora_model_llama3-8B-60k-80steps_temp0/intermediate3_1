@@ -1,0 +1,46 @@
+// This is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value; 
+wire feedback_value_2; 
+wire feedback_value_3; 
+wire feedback_value_4; 
+wire feedback_value_5; 
+wire feedback_value_6; 
+wire feedback_value_7; 
+wire feedback_value_8; 
+wire feedback_value_9; 
+wire feedback_value_10; 
+wire feedback_value_11; 
+wire feedback_value_12; 
+wire feedback_value_13; 
+wire feedback_value_14; 
+wire feedback_value_15; 
+wire feedback_value_16; 
+wire feedback_value_17; 
+wire feedback_value_18; 
+wire feedback_value_19; 
+wire feedback_value_20; 
+wire feedback_value_21; 
+wire feedback_value_22; 
+wire feedback_value_23; 
+wire feedback_value_24; 
+wire feedback_value_25; 
+wire feedback_value_26; 
+wire feedback_value_27; 
+wire feedback_value_28; 
+wire feedback_value_29; 
+wire feedback_value_30; 
+wire feedback_value_31; 
+wire feedback_value_32; 
+wire feedback_value_33; 
+wire feedback_value_34; 
+wire feedback_value_35; 
+wire feedback_value_36; 
+wire feedback_value_37; 
+wire feedback_value

@@ -1,0 +1,1 @@
+module mux4to1_lut (input [3:0] d, input [1:0] sel, output out); reg [3:0] lut [0:3]; initial begin lut[0] = d[0]; lut[1] = d[1]; lut[2] = d[2]; lut[3] = d[3]; end assign out = lut[sel]; endmodule

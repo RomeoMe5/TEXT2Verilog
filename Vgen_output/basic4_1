@@ -1,0 +1,53 @@
+// This is a 2-to-1 multiplexer.
+module mux( 
+input [4:0] a, b,
+input sel,
+output [4:0] out ); 
+
+assign out = (sel == 1'b0)? a : b; 
+
+endmodule 
+
+// This is a 1-to-1 multiplexer.
+module mux1( 
+input a, b,
+input sel,
+output out ); 
+
+assign out = (sel == 1'b0)? a : b; 
+
+endmodule 
+
+// This is a 2-to-1 multiplexer.
+module mux2( 
+input [3:0] a, b,
+input sel,
+output [3:0] out ); 
+
+assign out = (sel == 1'b0)? a : b; 
+
+endmodule 
+
+// This is a 1-to-1 multiplexer.
+module mux3( 
+input a, b,
+input sel,
+output out ); 
+
+assign out = (sel == 1'b0)? a : b; 
+
+endmodule 
+
+// This is a 2-to-1 multiplexer.
+module mux4( 
+input [3:0] a, b,
+input sel,
+output [3:0] out ); 
+
+assign out = (sel == 1'b0)? a : b; 
+
+endmodule 
+
+// This is a 1-to-1 multiplexer.
+module mux5( 
+input a

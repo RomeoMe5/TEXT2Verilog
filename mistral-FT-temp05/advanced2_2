@@ -1,0 +1,41 @@
+// This is a decade counter that counts from 0 through 9, inclusive. It counts only when slowena is high.
+module count_slow(input clk, input slowena, input reset, output reg [3:0] q);
+// Increment q if slowena is high and q is not 9. Otherwise, do nothing. Also, if reset is high, set q to 0.
+
+// Always @(posedge clk) begin
+//     if (slowena)
+//         if (q == 9)
+//             q <= 0;
+//         else
+//             q <= q+1;
+//     end
+// end
+
+// Always @(posedge clk) begin
+//     if (slowena)
+//         if (q == 9)
+//             q <= 0;
+//         else
+//             q <= q+1;
+//     end
+// end
+
+// Always @(posedge clk) begin
+//     if (slowena)
+//         if (q == 9)
+//             q <= 0;
+//         else
+//             q <= q+1;
+//     end
+// end
+
+// Always @(posedge clk) begin
+//     if (slowena)
+//         if (q == 9)
+//             q <= 0;
+//         else
+//             q <= q+1;
+//     end
+// end
+
+// Always @(

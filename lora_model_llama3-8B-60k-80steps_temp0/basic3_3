@@ -1,0 +1,23 @@
+// This is a 3-bit priority encoder. It outputs the position of the first high bit.
+module priority_encoder( 
+input [2:0] in,
+output reg [1:0] pos ); 
+// If in==0, assign zero to pos
+// If in[0] is high, assign 0 to pos
+// If in[1] is high, assign 1 to pos
+// If in[2] is high, assign 2 to pos
+always @(*) begin
+	if (in==0) begin
+		pos=0;
+	end
+	else if (in[0]) begin
+		pos=0;
+	end
+	else if (in[1]) begin
+		pos=1;
+	end
+	else if (in[2]) begin
+		pos=2;
+	end
+end
+endmodule

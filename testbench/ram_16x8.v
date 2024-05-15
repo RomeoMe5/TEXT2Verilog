@@ -1,0 +1,1 @@
+module ram_16x8 (input clk, input [3:0] addr, input [7:0] data_in, input write_en, output reg [7:0] data_out);   reg [7:0] mem [0:15];   always @(posedge clk) begin  if (write_en) mem[addr] <= data_in;  data_out <= mem[addr];  end   endmodule

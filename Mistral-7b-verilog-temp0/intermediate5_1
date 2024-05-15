@@ -1,0 +1,25 @@
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+
+    reg [7:0] temp;
+
+    always @(posedge clk or posedge reset)
+    begin
+        if(reset)
+            out <= 0;
+        else if(load)
+            out <= data;
+        else
+            out <= temp;
+    end
+
+    always @(posedge clk or posedge reset)
+    begin
+        if(reset)
+            temp <= 0;
+        else if(load)
+            temp <= data;
+        else
+            temp <= {amount{2'b0},data};
+    end
+
+endmodule

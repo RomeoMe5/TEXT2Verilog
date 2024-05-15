@@ -1,0 +1,12 @@
+module count_slow(input clk, input slowena, input reset, output reg [3:0] q);
+
+
+### Response:
+	
+	always @(posedge clk)
+		if (reset || (q == 9 && slowena))
+			q <= 0;
+		else
+			q <= q+1;
+	
+endmodule

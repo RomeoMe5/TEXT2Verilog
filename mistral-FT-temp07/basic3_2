@@ -1,0 +1,7 @@
+module priority_encoder( 
+input [2:0] in,
+output reg [1:0] pos ); 
+
+assign pos = in[2] ? 2'h0 : (in[1] ? 2'h1 : 2'h2);
+
+endmodule

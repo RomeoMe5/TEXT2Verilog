@@ -1,0 +1,30 @@
+// This is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value; 
+
+// The output of the LFSR is the current state of the register
+assign q = r_reg;
+
+// The next state of the register is the current state XORed with the feedback value
+// The feedback value is the output of the LFSR shifted right by 1 bit
+assign r_next = r_reg ^ {feedback_value, r_reg[4:1]};
+
+// The feedback value is the output of the LFSR shifted right by 1 bit
+// The output of the LFSR is the current state of the register
+assign feedback_value = r_reg[4];
+
+// The register is reset to 5 when reset is high. Otherwise, it takes value of r_next
+always @(posedge clk) begin
+    if (reset)
+        r_reg <= 5;
+    else
+        r_reg <= r_next;
+end
+
+endmodule

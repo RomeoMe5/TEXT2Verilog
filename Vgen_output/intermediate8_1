@@ -1,0 +1,30 @@
+// This is a circuit synthesized from a truth table
+//    Inputs   |  Outputs
+//  x3  x2  x1 |    f 
+//  0   0   0  |    1
+//  0   0   1  |    1
+//  0   1   0  |    0
+//  0   1   1  |    1
+//  1   0   0  |    0
+//  1   0   1  |    0
+//  1   1   0  |    1
+//  1   1   1  |    0
+module truthtable(input x3, input x2, input x1, output f ); // input and output wires are declared
+    assign f = x3 & x2 | x3 & x1 | x2 & x1; // circuit
+endmodule
+
+module truthtable_tb; // test bench
+    // instantiate circuit
+    truthtable t1( x3, x2, x1, f );
+    // input and output wires are declared
+    wire x3, x2, x1, f;
+    // test bench
+    initial begin
+        x3 = 0; x2 = 0; x1 = 0; #10;
+        x3 = 0; x2 = 0; x1 = 1; #10;
+        x3 = 0; x2 = 1; x1 = 0; #10;
+        x3 = 0; x2 = 1; x1 = 1; #10;
+        x3 = 1; x2 = 0; x1 = 0; #10;
+        x3 = 1; x2 = 0; x1 = 1; #10;
+        x3 = 1; x2 = 1; x1 = 0; #10;
+        x

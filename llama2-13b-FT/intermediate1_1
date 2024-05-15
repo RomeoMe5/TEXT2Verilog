@@ -1,0 +1,14 @@
+module half_adder( 
+input a, b,
+output cout, sum );
+
+
+always @(*) begin
+	cout = 'x;
+	sum = 'x;
+end
+
+assign {cout, sum} = a+b;
+
+
+endmodule

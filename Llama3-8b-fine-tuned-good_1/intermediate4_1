@@ -1,0 +1,20 @@
+module simple_fsm(input clk, input reset, input in, output out);
+reg present_state, next_state;
+    
+    always_comb begin
+        case (present_state)
+            0: next_state = in? 0 : 1;
+            1: next_state = in? 1 : 0;
+        endcase
+    end
+    
+    always @(posedge clk) begin
+        if (reset) begin
+            present_state <= 0;
+            out <= 1;
+        end else begin
+            present_state <= next_state;
+            out <= present_state;
+        end
+    end
+endmodule

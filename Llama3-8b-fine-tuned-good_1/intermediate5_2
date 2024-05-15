@@ -1,0 +1,14 @@
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+
+	always @(posedge clk)
+		if (reset)
+			out <= 8'h0;
+		else if (load)
+			out <= data;
+		else 
+		{
+			out <= {out[6:0], out[7]};
+			out <= {out[5:0], out[7], out[6]};
+		}
+		
+endmodule

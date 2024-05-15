@@ -1,0 +1,29 @@
+module counter( 
+input clk,
+input reset,
+output reg [3:0] q
+);  // Note that the output is declared as a register to indicate that it is part of the state
+
+
+always_comb begin
+	if (reset)
+		q = 1;
+	else
+		q = q+1;
+end
+
+always @(posedge clk) begin
+	if (reset)
+		q <= 1;
+	else
+		q <= q+1;
+end
+
+always @(*) begin
+	if (reset)
+		q = 1;
+	else
+		q = q+1;
+end
+
+endmodule

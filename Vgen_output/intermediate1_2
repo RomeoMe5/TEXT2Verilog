@@ -1,0 +1,35 @@
+// This is a half adder.
+module half_adder( 
+input a, b,
+output cout, sum );
+// A half adder adds two bits and produces a sum and carry-out. 
+// This module is the half adder. 
+// The carry-out is called cout.
+assign sum = a ^ b; 
+assign cout = a & b; 
+endmodule 
+// This is a full adder.
+module full_adder( 
+input a, b, cin,
+output cout, sum );
+assign sum = a ^ b ^ cin; 
+assign cout = (a & b) | (b & cin) | (a & cin);
+endmodule 
+// This is a 2-bit counter.
+module counter( 
+input clk, rst, en,
+output [1:0] q ); 
+reg [1:0] q; 
+always @(posedge clk) begin 
+if (rst == 1'b1) q <= 0; 
+else if (en == 1'b1) q <= q + 1; 
+end 
+endmodule 
+// This is a 2-bit register.
+module reg( 
+input clk, rst, en,
+output [1:0] q ); 
+reg [1:0] q; 
+always @(posedge clk) begin 
+if (rst == 1'b1) q <= 0; 
+else if (en == 1'b1) q <= q;

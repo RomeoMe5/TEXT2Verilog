@@ -1,0 +1,9 @@
+// This is a module that assigns the output to the input
+module wire_assign( input in, output out );
+// assign the output out to the input in;
+// endmodule
+
+// This is a module that assigns the output to the input, but with a delay
+module wire_assign_delay( input in, output out, delay d );
+// assign the output out to the input in after a delay of d;
+// endmodule

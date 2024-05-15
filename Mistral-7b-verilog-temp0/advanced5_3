@@ -1,0 +1,44 @@
+module abro( input clk, input reset,input a, input b, output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+always @(posedge clk or negedge reset)
+begin
+if (reset)
+cur_state <= IDLE;
+else
+cur_state <= next_state;
+end
+always @(a or b)
+begin
+if (cur_state == IDLE)
+begin
+if (a && b)
+next_state <= SAB;
+else if (a)
+next_state <= SA;
+else if (b)
+next_state <= SB;
+else
+next_state <= IDLE;
+end
+else if (cur_state == SA)
+begin
+if (b)
+next_state <= SAB;
+else
+next_state <= SA;
+end
+else if (cur_state == SB)
+begin
+if (a)
+next_state <= SAB;
+else
+next_state <= SB;
+end
+else if (cur_state == SAB)
+next_state <= IDLE;
+end
+endmodule

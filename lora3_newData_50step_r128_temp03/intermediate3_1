@@ -1,0 +1,34 @@
+// This is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value; 
+
+assign feedback_value = r_reg[4] ^ r_reg[2];
+
+// The output of the LFSR is the current value of r_reg
+assign q = r_reg;
+
+// The next value of r_reg is determined by the output of the XOR gate
+// The XOR gate outputs the feedback value if bit position 5 is being shifted out, otherwise it outputs the input bit
+// The output of the XOR gate is connected to the input of the flip-flop
+// The flip-flop is triggered by the positive edge of clk
+// The reset input is synchronous
+always @(posedge clk) begin
+    if (reset)
+        r_reg <= 5'd1;
+    else
+        r_reg <= r_next;
+end
+
+// The next value of r_reg is determined by the output of the XOR gate
+// The XOR gate outputs the feedback value if bit position 5 is being shifted out, otherwise it outputs the input bit
+// The output of the XOR gate is connected to the input of the flip-flop
+// The flip-flop is triggered by the positive edge of clk
+// The reset input is synchronous
+//assign r_next = r_reg[4]? feedback_value : r_reg[0];
+//assign r

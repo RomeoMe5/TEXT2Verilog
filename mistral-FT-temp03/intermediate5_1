@@ -1,0 +1,18 @@
+// This is a shift left and rotate operation
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+
+
+// If reset, load data into out immediately. Otherwise, rotate and shift left.
+// If load, out = data;
+// else if amount == 2'b01, out = {out[6:0], 1'b0};
+// else if amount == 2'b10, out = {out[5:0], 1'b0};
+// else if amount == 2'b11, out = {out[4:0], 1'b0};
+// else if amount == 2'b20, out = {out[3:0], 1'b0};
+// else if amount == 2'b21, out = {out[2:0], 1'b0};
+// else if amount == 2'b22, out = {out[1:0], 1'b0};
+// else if amount == 2'b23, out = {out[0], 1'b0};
+
+    always @(posedge clk) begin
+        if (reset)
+            out <= data;
+        else if (amount == 2

@@ -1,0 +1,35 @@
+// This is a module that implements an AND gate
+module and_gate( 
+input a, 
+input b, 
+output out );
+// ouput the AND of a and b
+assign out = a & b;
+endmodule
+
+module test_and_gate();
+reg a, b;
+wire out;
+// instantiate the module
+and_gate uut(.a(a),.b(b),.out(out) );
+initial begin
+a = 1'b0;
+b = 1'b0;
+#5
+a = 1'b1;
+b = 1'b1;
+#5
+a = 1'b0;
+b = 1'b1;
+#5
+a = 1'b1;
+b = 1'b0;
+#5
+a = 1'b0;
+b = 1'b0;
+#5
+a = 1'b1;
+b = 1'b1;
+end
+endmodule
+

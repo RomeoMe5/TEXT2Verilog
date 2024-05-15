@@ -1,0 +1,29 @@
+// This is a half adder.
+module half_adder( 
+input a, b,
+output cout, sum );
+// A half adder adds two bits and produces a sum and carry-out.
+
+// This is a full adder.
+module full_adder( 
+input a, b, cin,
+output cout, sum );
+// A full adder adds three bits and produces a sum and carry-out.
+
+// This is a 4-bit adder.
+module adder( 
+input [3:0] a, b,
+output [3:0] sum, cout );
+// An adder adds two 4-bit numbers and produces a 4-bit sum and carry-out.
+
+// This is a 4-bit adder with carry-in.
+module adder_ci( 
+input [3:0] a, b, cin,
+output [3:0] sum, cout );
+// An adder adds two 4-bit numbers and produces a 4-bit sum and carry-out.
+
+// This is a 4-bit adder with carry-in and carry-out.
+module adder_co( 
+input [3:0] a, b, cin,
+output [3:0] sum, cout );
+// An adder adds two 4-bit numbers and

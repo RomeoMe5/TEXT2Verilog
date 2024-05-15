@@ -1,0 +1,32 @@
+// This is an ABRO FSM. 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( 
+input clk,
+input reset,
+input  a,
+input  b,
+output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// The output z is high when 1 is received for signals a and b in any order. 
+// It is also high when both a and b are received simultaneously. 
+// Otherwise, z is 0.
+assign z = (cur_state == SAB) || (cur_state == SA && b) || (cur_state == SB && a);
+
+// If the current state is IDLE and either a or b is high, then state changes to SA if a is high, and to SB if b is high.
+// If the current state is SA and b is high, then state changes to SAB.
+// If the current state is SB and a is high, then state changes to SAB.
+// If the current state is SAB and either a or b is low, then state changes to IDLE.
+// Otherwise, the state remains the same.
+always @(posedge clk) begin
+    if (reset) cur_state <= IDLE;
+    else cur_state <= next_state;
+end
+
+// The output z is high when 1 is received for signals a and b in any order. 
+// It is also high when both a and b are received simultaneously. 
+// Otherwise, z is 0.
+assign z = (cur_state == SAB) || (cur_state == SA && b) || (cur_state == SB && a

@@ -1,0 +1,39 @@
+// This is a shift left and rotate operation
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+// when load is high, load data to out
+// shift left and rotate the register out by amount bits
+// when reset is high, reset the counter to 0
+
+// always @(posedge clk) begin
+//     if (reset)
+//         out <= 0;
+//     else if (load)
+//         out <= data;
+//     else begin
+//         out <= {out[2:0], out[7:1]};
+//     end
+// end
+
+// always @(posedge clk) begin
+//     if (reset)
+//         out <= 0;
+//     else if (load)
+//         out <= data;
+//     else begin
+//         out <= {out[2:0], out[7:1]};
+//     end
+// end
+
+// always @(posedge clk) begin
+//     if (reset)
+//         out <= 0;
+//     else if (load)
+//         out <= data;
+//     else begin
+//         out <= {out[1:0], out[7:2]};
+//     end
+// end
+
+// always @(posedge clk) begin
+//     if (reset)
+//         out <= 0;

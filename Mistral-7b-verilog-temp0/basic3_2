@@ -1,0 +1,15 @@
+module priority_encoder( 
+input [2:0] in,
+output reg [1:0] pos ); 
+always @(in)
+begin
+if (in == 0)
+begin
+pos <= 0;
+end
+else
+begin
+pos <= in;
+end
+end
+endmodule

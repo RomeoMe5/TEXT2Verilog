@@ -1,0 +1,29 @@
+// This is a 5-bit maximal-length Galois LFSR with taps at bit positions 5 and 3
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value; 
+wire tap_value;
+
+assign feedback_value = r_reg[4];
+assign tap_value = r_reg[2];
+
+// The output q is the current state of the LFSR
+assign q = r_reg;
+
+// The next state of the LFSR is determined by the feedback value and the tap value
+// If both are 1, the output bit is flipped. Otherwise, it remains the same.
+// The output bit is also shifted left by 1 bit.
+assign r_next = {r_reg[3:0], ~feedback_value & tap_value};
+
+// The current state of the LFSR is stored in r_reg
+always @(posedge clk) begin
+    if (reset) r_reg <= 5'd1;
+    else r_reg <= r_next;
+end
+
+endmodule

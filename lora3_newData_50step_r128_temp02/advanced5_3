@@ -1,0 +1,37 @@
+// This is an FSM 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( input clk, input reset,input a, input b, output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// Update state or reset on every clock edge
+// Output z depends only on the state SAB
+// The output z is high when cur_state is SAB
+// cur_state is reset to IDLE when reset is high. Otherwise, it takes value of next_state.
+// Next state generation logic:
+// If cur_state is IDLE and a and b are both high, state changes to SAB
+// If cur_state is IDLE, and a is high, state changes to SA
+// If cur_state is IDLE, and b is high, state changes to SB
+// If cur_state is SA, and b is high, state changes to SAB
+// If cur_state is SB, and a is high, state changes to SAB
+// If cur_state is SAB, state changes to IDLE
+// Implements an FSM in Verilog
+// The FSM has four states: IDLE, SA, SB, and SAB
+// It has two inputs: a and b
+// It has one output: z
+// The FSM is reset to the IDLE state when reset is high. Otherwise, it stays in the same state as the previous clock cycle.
+// If both a and b are high in the IDLE state, the FSM changes state to SAB
+// If a is high in the IDLE state, the FSM changes state to SA
+// If b is high in the IDLE state, the FSM changes state to SB
+// If b is high in the SA state, the FSM changes state to SAB
+// If a is high in the SB state, the FSM changes state to SAB
+// If both a and b are low in the SAB state, the FSM changes state to IDLE
+// The output z is high only in the SAB state
+// The FSM is clocked by clk
+// The FSM is reset by reset
+// The FSM has two inputs: a and b
+// The FSM has one output: z
+// The FSM is described by the state transition table below
+// State | Next state a=0, b=0

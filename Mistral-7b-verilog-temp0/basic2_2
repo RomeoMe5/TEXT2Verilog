@@ -1,0 +1,6 @@
+module and_gate( 
+input a, 
+input b, 
+output out );
+out <= a & b;
+endmodule

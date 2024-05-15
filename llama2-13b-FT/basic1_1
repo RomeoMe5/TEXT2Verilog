@@ -1,0 +1,30 @@
+// This is a module that assigns the output to the input
+module wire_assign( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in, output out );
+
+
+// This is a module that assigns the output to the input, but inverts the input
+module wire_assign_inv( input in,

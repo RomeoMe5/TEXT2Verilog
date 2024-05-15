@@ -1,0 +1,17 @@
+module lfsr( 
+input clk,
+input reset,
+output [4:0] q
+); 
+reg [4:0] r_reg;
+wire [4:0] r_next;
+wire feedback_value;
+always @(posedge clk or negedge reset)
+begin
+if (reset)
+r_reg <= 1;
+else
+r_next <= {feedback_value, r_reg[4:1]};
+end
+assign q = r_reg;
+endmodule

@@ -1,0 +1,16 @@
+// This is a 3-bit priority encoder. It outputs the position of the first high bit.
+module priority_encoder( 
+input [2:0] in,
+output reg [1:0] pos ); 
+
+
+// Positions are 2'b00, 2'b01, 2'b10, 2'b11 for in[2], in[1], in[0], and in[2:1] respectively.
+
+// Example: in = 8'b10010000; pos = 2'b01;
+// in = 8'b00000000; pos = 2'b00;
+// in = 8'b00000001; pos = 2'b00;
+// in = 8'b00000010; pos = 2'b01;
+// in = 8'b00000100; pos = 2'b00;
+// in = 8'b00001000; pos = 2'b00;
+// in = 8'b00010000; pos = 2'b01;
+// in = 8'b0010000

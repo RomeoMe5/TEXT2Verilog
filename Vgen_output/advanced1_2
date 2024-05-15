@@ -1,0 +1,23 @@
+// This is a signed adder that adds two 8-bit 2's complement numbers. It also captures a signed overflow.
+module signed_adder(input [7:0] a, input [7:0] b, output [7:0] s, output overflow ); 
+// The numbers a and b are added to the output s. 
+// The signed overflow of a and b is assigned to the output overflow. 
+// The numbers are added using a full adder. 
+// A full adder is a circuit that adds two binary numbers. 
+// A full adder has three inputs, A, B, and C, and three outputs, S, C, and V. 
+// A is the most significant bit of the first binary number. 
+// B is the most significant bit of the second binary number. 
+// C is the carry-in bit. 
+// S is the most significant bit of the sum. 
+// C is the carry-out bit. 
+// V is the overflow bit. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by the following truth table. 
+// The full adder is represented by

@@ -1,0 +1,35 @@
+// This is a Moore state machine with two states 0 and 1, one input in, and one output out. 
+// Reset state is 0. Output is high in state 0. If in is low, state changes.
+module simple_fsm(input clk, input reset, input in, output out);
+reg present_state, next_state;
+always @(posedge clk, posedge reset) begin
+    if (reset) begin
+        present_state <= 0;
+        next_state <= 0;
+    end else begin
+        present_state <= next_state;
+    end
+end
+
+always @(present_state, in) begin
+    case (present_state)
+        0: if (in == 0) begin
+            next_state <= 1;
+        end else begin
+            next_state <= 0;
+        end
+        1: if (in == 0) begin
+            next_state <= 0;
+        end else begin
+            next_state <= 1;
+        end
+    endcase
+end
+
+always @(present_state) begin
+    case (present_state)
+        0: out <= 1;
+        1: out <= 0;
+    endcase
+end
+endmodule

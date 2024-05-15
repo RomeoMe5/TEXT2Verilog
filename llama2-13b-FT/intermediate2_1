@@ -1,0 +1,19 @@
+module counter( 
+input clk,
+input reset,
+output reg [3:0] q
+); 
+
+
+
+always @(*) begin
+	if (reset)
+		q <= 0;
+	else if (q < 12)
+		q <= q+1;
+	else
+		q <= 12;
+end
+
+
+endmodule

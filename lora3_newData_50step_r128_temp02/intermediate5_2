@@ -1,0 +1,27 @@
+// This is a shift left and rotate operation
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+// when load is high, load data to out
+// shift left and rotate the register out by amount bits
+// amount is a 3-bit number, where each bit represents how much to shift and rotate by 1 bit.
+// bit 2: shift left
+// bit 1: rotate left
+// bit 0: rotate right
+// For example, 3'b010 means shift left by 1 bit, and rotate left by 1 bit. 
+// 3'b100 means rotate right by 1 bit. 
+// 3'b001 means shift left by 1 bit, and rotate left and right by 1 bit each. 
+// The output out is the contents of the register.
+
+always @(posedge clk) begin
+    if (load) begin
+        out<=data;
+    end
+    else begin
+        case (amount)
+        3'b010:out<= {out[6:0],out[7]};
+        3'b100:out<= {out[0],out[7:1]};
+        3'b001:out<= {out[5:0],out[7:6]};
+        endcase
+    end
+end
+
+endmodule

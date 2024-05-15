@@ -1,0 +1,32 @@
+// This is an ABRO FSM. 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( 
+input clk,
+input reset,
+input  a,
+input  b,
+output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// The output z is high when 1 is received for signals a and b in any order. 
+// It is high when both a and b are high, when a is high and b is low, and when b is high and a is low. 
+// It is low when neither a nor b are high. 
+// The output z is high when the FSM is in state SAB. 
+// The output z is low when the FSM is in state IDLE, SA, or SB. 
+// The FSM changes state when a or b change value. 
+// The FSM is reset to state IDLE when reset is high. 
+// The FSM has a positive edge triggered clock. 
+// The FSM should output z = 1 when a = 1 and b = 1, a = 1 and b = 0, or a = 0 and b = 1. 
+// The FSM should output z = 0 when a = 0 and b = 0. 
+// The FSM should change state when a or b change value. 
+// The FSM should reset to state IDLE when reset is high. 
+// The FSM should have a positive edge triggered clock. 
+always @(posedge clk) begin
+if (reset) cur_state <= IDLE;
+else cur_state <= next_state;
+end
+
+always_comb begin

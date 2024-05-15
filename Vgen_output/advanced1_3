@@ -1,0 +1,59 @@
+// This is a signed adder that adds two 8-bit 2's complement numbers. It also captures a signed overflow.
+module signed_adder(input [7:0] a, input [7:0] b, output [7:0] s, output overflow ); 
+// The numbers a and b are added to the output s. 
+// assign the occurence of the signed overflow of a and b to the output overflow.
+// a signed overflow occurs if the most significant bits of a and b are low and the most significant bit of s is high
+// a signed overflow may also occur if the most significant bits of a and b are high and the most significant bit of s is low
+
+logic [7:0] s1;
+logic [7:0] s2;
+logic [7:0] s3;
+logic [7:0] s4;
+logic [7:0] s5;
+logic [7:0] s6;
+logic [7:0] s7;
+logic [7:0] s8;
+
+logic overflow1;
+logic overflow2;
+logic overflow3;
+logic overflow4;
+logic overflow5;
+logic overflow6;
+logic overflow7;
+logic overflow8;
+
+logic overflow9;
+logic overflow10;
+logic overflow11;
+logic overflow12;
+logic overflow13;
+logic overflow14;
+logic overflow15;
+logic overflow16;
+
+logic overflow17;
+logic overflow18;
+logic overflow19;
+logic overflow20;
+logic overflow21;
+logic overflow22;
+logic overflow23;
+logic overflow24;
+
+logic overflow25;
+logic overflow26;
+logic overflow27;
+logic overflow28;
+logic overflow29;
+logic overflow30;
+logic overflow31;
+logic overflow32;
+
+always_comb
+begin
+	s1 = a[0] ^ b[0];
+	s2 = a[1] ^ b[1];
+	s3 = a[2] ^ b[2];
+	s4 = a[3] ^ b[3];
+	s5 =

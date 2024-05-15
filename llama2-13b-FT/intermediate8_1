@@ -1,0 +1,33 @@
+// This is a circuit synthesized from a truth table
+//    Inputs   |  Outputs
+//  x3  x2  x1 |    f 
+//  0   0   0  |    1
+//  0   0   1  |    1
+//  0   1   0  |    0
+//  0   1   1  |    1
+//  1   0   0  |    0
+//  1   0   1  |    0
+//  1   1   0  |    1
+//  1   1   1  |    0
+module truthtable(input x3, input x2, input x1, output f );
+
+
+// This is a circuit synthesized from a Karnaugh map
+//    Inputs   |  Outputs
+//  x3  x2  x1 |    f 
+//  00 00 00 |  0
+//  00 00 01 |  0
+//  00 00 11 |  1
+//  00 01 00 |  0
+//  00 01 01 |  1
+//  00 01 11 |  1
+//  00 11 00 |  0
+//  00 11 01 |  1
+//  00 11 11 |  1
+//  01 00 00 |  0
+//  01 00 01 |  0
+//  01 00 11 |  1
+//  01 01 00 |  1
+//  01 01 01 |  1
+//  01 01 11 |  1
+//  0

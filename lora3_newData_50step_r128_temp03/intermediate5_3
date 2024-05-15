@@ -1,0 +1,27 @@
+// This is a shift left and rotate operation
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out);
+// when load is high, load data to out
+// when load is low, shift left and rotate the register out by amount bits
+// amount is a 3-bit vector, where each bit represents a shift/rotate by 1 bit position
+// 000: shift left by 1 bit
+// 001: shift left by 2 bits
+// 010: shift left by 4 bits
+// 011: rotate left by 1 bit
+// 100: rotate left by 2 bits
+// 101: rotate left by 4 bits
+// data is an 8-bit input vector
+// out is an 8-bit output vector
+
+always @(posedge clk) begin
+    if (load) begin
+        out <= data;
+    end
+    else begin
+        case (amount)
+        0: out <= {out[6:0],out[7]};
+        1: out <= {out[5:0],out[7:6]};
+        2: out <= {out[4:0],out[7:5]};
+        3: out <= {out[7],out[6:1]};
+        4: out <= {out[7],out[5:2]};
+        5: out <= {out[7],out[4:0]};
+        6: out <= {out

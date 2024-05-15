@@ -1,0 +1,31 @@
+// This is an ABRO FSM. 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( 
+input clk,
+input reset,
+input  a,
+input  b,
+output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// The output z is high when 1 is received for signals a and b in any order. 
+// The output z is high when cur_state is SAB. 
+// The output z is 0 otherwise.
+assign z = (cur_state == SAB);
+
+// The state transition logic is as follows:
+// If cur_state is IDLE and a and b are both 1, state changes to SAB
+// If cur_state is IDLE and a is 1, state changes to SA
+// If cur_state is IDLE and b is 1, state changes to SB
+// If cur_state is SA and a is 1, state changes to SAB
+// If cur_state is SA and a is 0, state changes to IDLE
+// If cur_state is SB and b is 1, state changes to SAB
+// If cur_state is SB and b is 0, state changes to IDLE
+// If cur_state is SAB and a and b are both 1, state changes to SAB
+// If cur_state is SAB and a is 0, state changes to IDLE
+// If cur_state is SAB and b is 0, state changes to IDLE
+// If cur_state is IDLE and neither a nor b are 1, state remains IDLE
+// If

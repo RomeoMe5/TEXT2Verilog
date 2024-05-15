@@ -1,0 +1,26 @@
+// This is a shift left and rotate operation
+module left_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out); // 8-bit register
+	always @(posedge clk, posedge reset) begin
+		if (reset) out <= 0;
+		else if (load) out <= data << amount;
+	end
+endmodule
+
+// This is a shift right and rotate operation
+module right_rotate(input clk,input reset,input [2:0] amount,input [7:0] data,input load,output reg [7:0] out); // 8-bit register
+	always @(posedge clk, posedge reset) begin
+		if (reset) out <= 0;
+		else if (load) out <= data >> amount;
+	end
+endmodule
+
+// This is a shift left and rotate operation
+module left_rotate16(input clk,input reset,input [2:0] amount,input [15:0] data,input load,output reg [15:0] out); // 16-bit register
+	always @(posedge clk, posedge reset) begin
+		if (reset) out <= 0;
+		else if (load) out <= data << amount;
+	end
+endmodule
+
+// This is a shift right and rotate operation
+module right_rotate16(input clk,input reset,input [2:0] amount,input [15:0] data,input

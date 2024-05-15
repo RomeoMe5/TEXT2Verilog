@@ -1,0 +1,25 @@
+// This is a module that assigns the output to the input
+module wire_assign( input in, output out );
+// assign the output out to the input in;
+// endmodule
+
+// This is a module that assigns the output to the input, but with a delay
+module wire_assign_delay( input in, output out, delay d );
+// assign the output out to the input in;
+// delay d;
+// endmodule
+
+// This is a module that assigns the output to the input, but with a different delay for each bit
+module wire_assign_delay_bit( input [7:0] in, output [7:0] out, delay [7:0] d );
+// assign the output out to the input in;
+// delay d;
+// endmodule
+
+// This is a module that assigns the output to the input, but with a different delay for each bit (using a for loop)
+module wire_assign_delay_for( input [7:0] in, output [7:0] out, delay [7:0] d );
+// assign the output out to the input in;
+// for (int i=0;i<8;i++)
+//     delay d[i];
+// endmodule
+
+// This is a module that assigns the output to the

@@ -1,0 +1,33 @@
+// This is an FSM 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( input clk, input reset,input a, input b, output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// Update state or reset on every clock edge
+// Output z depends only on the state SAB
+// The output z is high when cur_state is SAB
+// cur_state is reset to IDLE when reset is high. Otherwise, it takes value of next_state.
+// Next state generation logic:
+// If cur_state is IDLE and a and b are both high, state changes to SAB
+// If cur_state is IDLE, and a is high, state changes to SA
+// If cur_state is IDLE, and b is high, state changes to SB
+// If cur_state is SA, and b is high, state changes to SAB
+// If cur_state is SB, and a is high, state changes to SAB
+// If cur_state is SAB, state changes to IDLE
+// Implements an FSM in Verilog
+// The FSM has two states, A and B, one input, x, and one output, z.
+// The output z is high only in state B. The FSM transitions from state A to state B if the input x is high. The FSM transitions from state B to state A if the input x is low.
+// The FSM is reset to state A if reset is high. Otherwise, it takes value of next_state.
+// The FSM has a positive edge triggered asynchronous reset.
+// The FSM has a positive edge triggered synchronous clock.
+// The FSM has a negative edge triggered asynchronous reset.
+// The FSM has a negative edge triggered synchronous clock.
+// The FSM has a positive edge triggered asynchronous reset and a negative edge triggered synchronous clock.
+// The FSM has a negative edge triggered asynchronous reset and a positive edge triggered synchronous clock.
+// The FSM has a positive edge triggered asynchronous reset, a negative edge triggered synchronous clock, and a positive edge triggered asynchronous reset.
+// The FSM has a negative edge triggered asynchronous reset, a positive edge triggered synchronous clock, and a negative edge triggered asynchronous reset.
+// The FSM has a positive edge triggered asynchronous reset, a negative edge triggered synchronous clock, and a positive edge triggered asynchronous reset.
+// The FSM has a negative edge triggered asynchronous reset

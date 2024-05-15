@@ -1,0 +1,7 @@
+module simple_fsm(input clk, input reset, input in, output out);
+reg present_state, next_state;
+
+
+
+
+endmodule

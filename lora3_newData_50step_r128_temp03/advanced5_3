@@ -1,0 +1,45 @@
+// This is an FSM 
+// It outputs 1 when 1 is received for signals a and b irrespetive of their order, either simultaneously or non-simultaneously.
+module abro( input clk, input reset,input a, input b, output z );
+parameter IDLE = 0,
+SA = 1,
+SB = 2,
+SAB = 3;
+reg [1:0] cur_state,next_state;
+// Update state or reset on every clock edge
+// Output z depends only on the state SAB
+// The output z is high when cur_state is SAB
+// cur_state is reset to IDLE when reset is high. Otherwise, it takes value of next_state.
+// Next state generation logic:
+// If cur_state is IDLE and a and b are both high, state changes to SAB
+// If cur_state is IDLE, and a is high, state changes to SA
+// If cur_state is IDLE, and b is high, state changes to SB
+// If cur_state is SA, and b is high, state changes to SAB
+// If cur_state is SB, and a is high, state changes to SAB
+// If cur_state is SAB, state changes to IDLE
+// Implements an FSM in Verilog
+// The FSM has two states: IDLE and SAB
+// It has two inputs: a and b
+// It has one output: z
+// The FSM is reset to the IDLE state when reset is high. Otherwise, it stays in the same state as before.
+// The output z is high only when the FSM is in the SAB state.
+// The FSM changes state if both a and b are high in the IDLE state. Otherwise, it changes state if only a or b is high in the IDLE state.
+// The FSM changes state from SAB to IDLE if both a and b are low.
+always @(posedge clk) begin
+    if (reset) cur_state <= IDLE;
+    else cur_state <= next_state;
+end
+
+always_comb begin
+    case (cur_state)
+        IDLE: next_state = a && b? SAB : a? SA : b? SB : IDLE;
+        SA: next_state = b? SAB : SA;
+        SB: next_state = a? SAB : SB;
+        SAB: next_state = a && b? IDLE : SAB;
+    endcase
+end
+
+assign z = cur_state == SAB;
+
+endmodule
+</

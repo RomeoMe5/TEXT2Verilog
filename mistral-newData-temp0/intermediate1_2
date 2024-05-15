@@ -1,0 +1,10 @@
+// This is a half adder.
+module half_adder( 
+input a, b,
+output cout, sum );
+// A half adder adds two bits and produces a sum and carry-out.
+// The carry-in is zero.
+
+assign {cout, sum} = a+b;
+
+endmodule

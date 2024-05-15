@@ -1,0 +1,25 @@
+// This is a module that assigns the output to the input
+module wire_assign( input in, output out );
+// assign the output out to the input in
+
+
+// This is a module that assigns the output to the input, but with a delay
+module wire_assign_delay( input in, output out,
+						  parameter D=0 );
+// assign the output out to the input in, with a delay of D clock cycles
+
+
+// This is a module that assigns the output to the input, but with a delay
+// and a positive edge triggered asynchronous reset
+module wire_assign_delay_async_reset( input clk, input areset, input in, output out,
+									  parameter D=0 );
+// assign the output out to the input in, with a delay of D clock cycles,
+// when the asynchronous reset is not asserted
+// (the output is reset to whatever the input was the last time the asynchronous
+// reset was not asserted)
+
+
+// This is a module that assigns the output to the input, but with a delay
+// and a positive edge triggered synchronous reset
+module wire_assign_delay_sync_reset( input clk, input sr, input in, output out,
+						
