@@ -1,0 +1,98 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,No,
+advanced1,2,No,
+advanced1,3,No,
+advanced2,1,Yes,
+advanced2,2,Yes,
+advanced2,3,Yes,
+advanced3,1,Fail,"mistral-newData-temp0\advanced3_1:41: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+mistral-newData-temp0\advanced3_1:42: syntax error
+I give up."
+advanced3,2,Fail,"mistral-newData-temp0\advanced3_2:41: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+mistral-newData-temp0\advanced3_2:42: syntax error
+I give up."
+advanced3,3,Yes,
+advanced4,1,Yes,
+advanced4,2,Fail,"mistral-newData-temp0\advanced4_2:29: syntax error
+I give up."
+advanced4,3,Fail,"mistral-newData-temp0\advanced4_3:31: syntax error
+I give up."
+advanced5,1,Fail,"mistral-newData-temp0\advanced5_1:15: syntax error
+mistral-newData-temp0\advanced5_1:15: error: Invalid module instantiation
+mistral-newData-temp0\advanced5_1:18: syntax error
+mistral-newData-temp0\advanced5_1:18: error: invalid module item.
+mistral-newData-temp0\advanced5_1:19: syntax error
+mistral-newData-temp0\advanced5_1:19: error: invalid module item.
+mistral-newData-temp0\advanced5_1:20: syntax error
+mistral-newData-temp0\advanced5_1:20: error: invalid module item.
+mistral-newData-temp0\advanced5_1:21: syntax error
+mistral-newData-temp0\advanced5_1:25: error: invalid module item.
+mistral-newData-temp0\advanced5_1:26: syntax error
+mistral-newData-temp0\advanced5_1:26: error: invalid module item.
+mistral-newData-temp0\advanced5_1:27: syntax error
+mistral-newData-temp0\advanced5_1:29: error: invalid module item."
+advanced5,2,Fail,"mistral-newData-temp0\advanced5_2:37: syntax error
+I give up."
+advanced5,3,Fail,"mistral-newData-temp0\advanced5_3:21: error: Module definition fsm cannot nest into module abro.
+mistral-newData-temp0\advanced5_3:52: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+mistral-newData-temp0\advanced5_3:53: syntax error
+I give up."
+basic1,1,Yes,
+basic1,2,Fail,"mistral-newData-temp0\basic1_2:4: syntax error
+mistral-newData-temp0\basic1_2:4: error: Invalid module instantiation"
+basic1,3,Fail,"mistral-newData-temp0\basic1_3:4: syntax error
+mistral-newData-temp0\basic1_3:4: error: Invalid module instantiation"
+basic2,1,Yes,
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,Yes,
+basic3,2,Yes,
+basic3,3,Yes,
+basic4,1,No,
+basic4,2,Yes,
+basic4,3,Yes,
+intermediate1,1,Yes,
+intermediate1,2,Yes,
+intermediate1,3,No,
+intermediate2,1,Yes,
+intermediate2,2,No,
+intermediate2,3,Yes,
+intermediate3,1,Fail,"mistral-newData-temp0\intermediate3_1:18: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-newData-temp0\intermediate3_1:8:      : r_next is declared here as wire.
+mistral-newData-temp0\intermediate3_1:19: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-newData-temp0\intermediate3_1:8:      : r_next is declared here as wire.
+mistral-newData-temp0\intermediate3_1:20: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-newData-temp0\intermediate3_1:8:      : r_next is declared here as wire.
+mistral-newData-temp0\intermediate3_1:21: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-newData-temp0\intermediate3_1:8:      : r_next is declared here as wire.
+mistral-newData-temp0\intermediate3_1:22: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-newData-temp0\intermediate3_1:8:      : r_next is declared here as wire.
+5 error(s) during elaboration."
+intermediate3,2,Fail,"mistral-newData-temp0\intermediate3_2:31: syntax error
+I give up."
+intermediate3,3,No,
+intermediate4,1,Fail,"mistral-newData-temp0\intermediate4_1:36: syntax error
+I give up."
+intermediate4,2,No,
+intermediate4,3,Yes,
+intermediate5,1,Yes,
+intermediate5,2,Yes,
+intermediate5,3,Yes,
+intermediate6,1,Fail,"mistral-newData-temp0\intermediate6_1:10: error: q is not a valid l-value in tb_ram.UUT.
+mistral-newData-temp0\intermediate6_1:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,2,Fail,"mistral-newData-temp0\intermediate6_2:12: error: q is not a valid l-value in tb_ram.UUT.
+mistral-newData-temp0\intermediate6_2:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,3,Fail,"mistral-newData-temp0\intermediate6_3:11: error: q is not a valid l-value in tb_ram.UUT.
+mistral-newData-temp0\intermediate6_3:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,Fail,"mistral-newData-temp0\intermediate7_1:47: syntax error
+I give up."
+intermediate7,2,Fail,"mistral-newData-temp0\intermediate7_2:47: syntax error
+I give up."
+intermediate7,3,Fail,"mistral-newData-temp0\intermediate7_3:47: syntax error
+I give up."
+intermediate8,1,No,
+intermediate8,2,Yes,
+intermediate8,3,No,

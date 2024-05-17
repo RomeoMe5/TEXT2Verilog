@@ -1,0 +1,173 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,No,
+advanced1,2,No,
+advanced1,3,No,
+advanced2,1,Fail,"mistral-FT-temp03\advanced2_1:4: syntax error
+mistral-FT-temp03\advanced2_1:8: error: invalid module item.
+mistral-FT-temp03\advanced2_1:9: syntax error
+mistral-FT-temp03\advanced2_1:10: error: invalid module item."
+advanced2,2,Fail,"mistral-FT-temp03\advanced2_2:41: syntax error
+I give up."
+advanced2,3,Fail,"mistral-FT-temp03\advanced2_3:9: syntax error
+I give up."
+advanced3,1,Fail,"mistral-FT-temp03\advanced3_1:17: syntax error
+mistral-FT-temp03\advanced3_1:17: error: Invalid module instantiation
+mistral-FT-temp03\advanced3_1:20: syntax error
+mistral-FT-temp03\advanced3_1:20: error: invalid module item.
+mistral-FT-temp03\advanced3_1:21: syntax error
+mistral-FT-temp03\advanced3_1:21: error: invalid module item.
+mistral-FT-temp03\advanced3_1:22: syntax error
+mistral-FT-temp03\advanced3_1:22: error: invalid module item.
+mistral-FT-temp03\advanced3_1:23: syntax error
+I give up."
+advanced3,2,Fail,"mistral-FT-temp03\advanced3_2:17: syntax error
+mistral-FT-temp03\advanced3_2:17: error: Invalid module instantiation
+mistral-FT-temp03\advanced3_2:20: syntax error
+mistral-FT-temp03\advanced3_2:20: error: invalid module item.
+mistral-FT-temp03\advanced3_2:21: syntax error
+mistral-FT-temp03\advanced3_2:21: error: invalid module item.
+mistral-FT-temp03\advanced3_2:22: syntax error
+mistral-FT-temp03\advanced3_2:22: error: invalid module item.
+mistral-FT-temp03\advanced3_2:23: syntax error
+I give up."
+advanced3,3,Yes,
+advanced4,1,Fail,"mistral-FT-temp03\advanced4_1:36: syntax error
+I give up."
+advanced4,2,Fail,"mistral-FT-temp03\advanced4_2:9: syntax error
+mistral-FT-temp03\advanced4_2:13: error: invalid module item.
+mistral-FT-temp03\advanced4_2:14: syntax error
+mistral-FT-temp03\advanced4_2:15: error: invalid module item.
+mistral-FT-temp03\advanced4_2:16: syntax error
+mistral-FT-temp03\advanced4_2:16: error: invalid module item.
+mistral-FT-temp03\advanced4_2:17: syntax error
+mistral-FT-temp03\advanced4_2:17: error: invalid module item.
+mistral-FT-temp03\advanced4_2:18: syntax error
+mistral-FT-temp03\advanced4_2:18: error: invalid module item.
+mistral-FT-temp03\advanced4_2:19: syntax error
+mistral-FT-temp03\advanced4_2:19: error: invalid module item.
+mistral-FT-temp03\advanced4_2:20: syntax error
+I give up."
+advanced4,3,Fail,"mistral-FT-temp03\advanced4_3:9: syntax error
+mistral-FT-temp03\advanced4_3:13: error: invalid module item.
+mistral-FT-temp03\advanced4_3:14: syntax error
+mistral-FT-temp03\advanced4_3:15: error: invalid module item.
+mistral-FT-temp03\advanced4_3:16: syntax error
+mistral-FT-temp03\advanced4_3:16: error: invalid module item.
+mistral-FT-temp03\advanced4_3:17: syntax error
+mistral-FT-temp03\advanced4_3:17: error: invalid module item.
+mistral-FT-temp03\advanced4_3:18: syntax error
+mistral-FT-temp03\advanced4_3:18: error: invalid module item.
+mistral-FT-temp03\advanced4_3:19: syntax error
+mistral-FT-temp03\advanced4_3:19: error: invalid module item.
+mistral-FT-temp03\advanced4_3:20: syntax error
+I give up."
+advanced5,1,Fail,"mistral-FT-temp03\advanced5_1:21: syntax error
+mistral-FT-temp03\advanced5_1:21: error: Invalid module instantiation
+mistral-FT-temp03\advanced5_1:24: syntax error
+mistral-FT-temp03\advanced5_1:24: error: invalid module item.
+mistral-FT-temp03\advanced5_1:25: syntax error
+mistral-FT-temp03\advanced5_1:25: error: invalid module item.
+mistral-FT-temp03\advanced5_1:26: syntax error
+mistral-FT-temp03\advanced5_1:26: error: invalid module item.
+mistral-FT-temp03\advanced5_1:27: syntax error
+I give up."
+advanced5,2,Fail,"mistral-FT-temp03\advanced5_2:20: syntax error
+mistral-FT-temp03\advanced5_2:20: error: syntax error in continuous assignment"
+advanced5,3,Fail,"mistral-FT-temp03\advanced5_3:15: syntax error
+mistral-FT-temp03\advanced5_3:15: error: Invalid module instantiation
+mistral-FT-temp03\advanced5_3:18: syntax error
+mistral-FT-temp03\advanced5_3:18: error: invalid module item.
+mistral-FT-temp03\advanced5_3:19: syntax error
+mistral-FT-temp03\advanced5_3:19: error: invalid module item.
+mistral-FT-temp03\advanced5_3:20: syntax error
+mistral-FT-temp03\advanced5_3:20: error: invalid module item.
+mistral-FT-temp03\advanced5_3:21: syntax error
+I give up."
+basic1,1,Yes,
+basic1,2,Yes,
+basic1,3,Fail,"mistral-FT-temp03\basic1_3:7: error: Module definition wire_assign_delay cannot nest into module wire_assign.
+mistral-FT-temp03\basic1_3:7: syntax error
+mistral-FT-temp03\basic1_3:1: Errors in port declarations.
+mistral-FT-temp03\basic1_3:13: error: Module definition wire_assign_delay_bit cannot nest into module wire_assign_delay.
+mistral-FT-temp03\basic1_3:13: syntax error
+mistral-FT-temp03\basic1_3:1: Errors in port declarations.
+mistral-FT-temp03\basic1_3:19: error: Module definition wire_assign_delay_for cannot nest into module wire_assign_delay_bit.
+mistral-FT-temp03\basic1_3:19: syntax error
+mistral-FT-temp03\basic1_3:1: Errors in port declarations.
+mistral-FT-temp03\basic1_3:25: syntax error
+I give up."
+basic2,1,Yes,
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,Fail,"mistral-FT-temp03\basic3_1:21: syntax error
+I give up."
+basic3,2,Fail,"mistral-FT-temp03\basic3_2:5: error: reg pos; cannot be driven by primitives or continuous assignment.
+1 error(s) during elaboration."
+basic3,3,Fail,"mistral-FT-temp03\basic3_3:20: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:21: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:22: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:23: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:24: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:25: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:26: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:27: warning: Numeric constant truncated to 3 bits.
+mistral-FT-temp03\basic3_3:29: syntax error
+I give up."
+basic4,1,No,
+basic4,2,No,
+basic4,3,Yes,
+intermediate1,1,Yes,
+intermediate1,2,Yes,
+intermediate1,3,No,
+intermediate2,1,Fail,"mistral-FT-temp03\intermediate2_1:46: syntax error
+I give up."
+intermediate2,2,Fail,"mistral-FT-temp03\intermediate2_2:47: syntax error
+I give up."
+intermediate2,3,Fail,"mistral-FT-temp03\intermediate2_3:8: syntax error
+mistral-FT-temp03\intermediate2_3:12: error: invalid module item.
+mistral-FT-temp03\intermediate2_3:13: syntax error
+mistral-FT-temp03\intermediate2_3:14: error: invalid module item."
+intermediate3,1,Fail,"mistral-FT-temp03\intermediate3_1:20: syntax error
+I give up."
+intermediate3,2,Fail,"mistral-FT-temp03\intermediate3_2:10: error: r_next is not a valid l-value in tb_lfsr.UUT.
+mistral-FT-temp03\intermediate3_2:7:      : r_next is declared here as wire.
+1 error(s) during elaboration."
+intermediate3,3,No,
+intermediate4,1,Fail,"mistral-FT-temp03\intermediate4_1:10: syntax error
+mistral-FT-temp03\intermediate4_1:10: error: Invalid module instantiation
+mistral-FT-temp03\intermediate4_1:13: error: invalid module item.
+mistral-FT-temp03\intermediate4_1:14: syntax error
+mistral-FT-temp03\intermediate4_1:17: error: invalid module item."
+intermediate4,2,Fail,"mistral-FT-temp03\intermediate4_2:9: syntax error
+mistral-FT-temp03\intermediate4_2:9: error: Invalid module instantiation
+mistral-FT-temp03\intermediate4_2:12: error: invalid module item.
+mistral-FT-temp03\intermediate4_2:13: syntax error
+mistral-FT-temp03\intermediate4_2:16: error: invalid module item."
+intermediate4,3,No,
+intermediate5,1,Fail,"mistral-FT-temp03\intermediate5_1:18: syntax error
+I give up."
+intermediate5,2,No,
+intermediate5,3,Fail,"mistral-FT-temp03\intermediate5_3:20: syntax error
+mistral-FT-temp03\intermediate5_3:24: error: invalid module item.
+mistral-FT-temp03\intermediate5_3:25: syntax error
+mistral-FT-temp03\intermediate5_3:26: error: invalid module item.
+mistral-FT-temp03\intermediate5_3:27: syntax error
+I give up."
+intermediate6,1,Fail,"mistral-FT-temp03\intermediate6_1:9: error: q is not a valid l-value in tb_ram.UUT.
+mistral-FT-temp03\intermediate6_1:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,2,Fail,"mistral-FT-temp03\intermediate6_2:8: syntax error
+I give up."
+intermediate6,3,Yes,
+intermediate7,1,Fail,"mistral-FT-temp03\intermediate7_1:43: syntax error
+I give up."
+intermediate7,2,Fail,"mistral-FT-temp03\intermediate7_2:39: error: Increment/decrement operator requires SystemVerilog.
+mistral-FT-temp03\intermediate7_2:40: syntax error
+mistral-FT-temp03\intermediate7_2:40: error: Invalid module instantiation"
+intermediate7,3,Fail,"mistral-FT-temp03\intermediate7_3:39: error: Increment/decrement operator requires SystemVerilog.
+mistral-FT-temp03\intermediate7_3:40: syntax error
+mistral-FT-temp03\intermediate7_3:40: error: Invalid module instantiation"
+intermediate8,1,Fail,"mistral-FT-temp03\intermediate8_1:4: syntax error
+mistral-FT-temp03\intermediate8_1:9: error: invalid module item."
+intermediate8,2,No,
+intermediate8,3,No,

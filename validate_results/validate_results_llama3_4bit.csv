@@ -1,0 +1,118 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,Fail,"Vgen_output\advanced1_1:11: syntax error
+I give up."
+advanced1,2,Fail,"Vgen_output\advanced1_2:23: syntax error
+I give up."
+advanced1,3,Fail,"Vgen_output\advanced1_3:54: syntax error
+Vgen_output\advanced1_3:53: error: Invalid module instantiation
+Vgen_output\advanced1_3:56: error: Invalid module instantiation
+Vgen_output\advanced1_3:57: error: Invalid module instantiation
+Vgen_output\advanced1_3:58: error: Invalid module instantiation
+I give up."
+advanced2,1,Fail,"Vgen_output\advanced2_1:24: syntax error
+I give up."
+advanced2,2,No,
+advanced2,3,No,
+advanced3,1,Fail,"Vgen_output\advanced3_1:58: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Vgen_output\advanced3_1:6:      : z is declared here as wire.
+Vgen_output\advanced3_1:60: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Vgen_output\advanced3_1:6:      : z is declared here as wire.
+2 error(s) during elaboration."
+advanced3,2,No,
+advanced3,3,Yes,
+advanced4,1,No,
+advanced4,2,Fail,"Vgen_output\advanced4_2:33: syntax error
+I give up."
+advanced4,3,No,
+advanced5,1,Fail,"Vgen_output\advanced5_1:26: syntax error
+Vgen_output\advanced5_1:26: error: Malformed conditional expression.
+Vgen_output\advanced5_1:37: syntax error
+Vgen_output\advanced5_1:37: error: Malformed conditional expression.
+Vgen_output\advanced5_1:45: syntax error
+Vgen_output\advanced5_1:45: error: Malformed conditional expression.
+Vgen_output\advanced5_1:66: syntax error
+I give up."
+advanced5,2,Fail,"Vgen_output\advanced5_2:46: syntax error
+I give up."
+advanced5,3,No,
+basic1,1,Yes,
+basic1,2,Yes,
+basic1,3,Fail,"Vgen_output\basic1_3:8: error: 'wire_assign' has already been declared in this scope.
+Vgen_output\basic1_3:2:      : It was declared here as a module.
+Vgen_output\basic1_3:11: Module wire_assign was already declared here: Vgen_output\basic1_3:2"
+basic2,1,Yes,
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,Fail,"Vgen_output\basic3_1:6: error: 'pos' has already been declared in this scope.
+Vgen_output\basic3_1:4:      : It was declared here as a variable."
+basic3,2,No,
+basic3,3,No,
+basic4,1,Fail,"Vgen_output\basic4_1:53: syntax error
+I give up."
+basic4,2,No,
+basic4,3,No,
+intermediate1,1,Fail,"Vgen_output\intermediate1_1:35: error: 'ripple_carry_adder' has already been declared in this scope.
+Vgen_output\intermediate1_1:24:      : It was declared here as a module.
+Vgen_output\intermediate1_1:42: Module ripple_carry_adder was already declared here: Vgen_output\intermediate1_1:24"
+intermediate1,2,Fail,"Vgen_output\intermediate1_2:29: syntax error
+I give up."
+intermediate1,3,Yes,
+intermediate2,1,No,
+intermediate2,2,No,
+intermediate2,3,Yes,
+intermediate3,1,No,
+intermediate3,2,Fail,"Vgen_output\intermediate3_2:14: error: q is not a valid l-value in tb_lfsr.UUT.
+Vgen_output\intermediate3_2:5:      : q is declared here as wire.
+Vgen_output\intermediate3_2:18: error: feedback_value is not a valid l-value in tb_lfsr.UUT.
+Vgen_output\intermediate3_2:9:      : feedback_value is declared here as wire.
+Vgen_output\intermediate3_2:19: error: r_next is not a valid l-value in tb_lfsr.UUT.
+Vgen_output\intermediate3_2:8:      : r_next is declared here as wire.
+Vgen_output\intermediate3_2:17: warning: @* found no sensitivities so it will never trigger.
+3 error(s) during elaboration."
+intermediate3,3,Fail,"Vgen_output\intermediate3_3:15: syntax error
+Vgen_output\intermediate3_3:15: error: Invalid module instantiation
+Vgen_output\intermediate3_3:20: error: invalid module item.
+Vgen_output\intermediate3_3:21: syntax error
+Vgen_output\intermediate3_3:24: error: invalid module item.
+Vgen_output\intermediate3_3:25: syntax error
+Vgen_output\intermediate3_3:25: error: Invalid module instantiation
+Vgen_output\intermediate3_3:26: error: Invalid module instantiation
+I give up."
+intermediate4,1,Fail,"Vgen_output\intermediate4_1:31: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Vgen_output\intermediate4_1:3:      : out is declared here as wire.
+Vgen_output\intermediate4_1:32: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Vgen_output\intermediate4_1:3:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate4,2,Fail,"Vgen_output\intermediate4_2:32: error: 'simple_fsm' has already been declared in this scope.
+Vgen_output\intermediate4_2:3:      : It was declared here as a module.
+Vgen_output\intermediate4_2:35: syntax error
+I give up."
+intermediate4,3,Fail,"Vgen_output\intermediate4_3:29: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Vgen_output\intermediate4_3:3:      : out is declared here as wire.
+Vgen_output\intermediate4_3:30: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Vgen_output\intermediate4_3:3:      : out is declared here as wire.
+Vgen_output\intermediate4_3:31: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Vgen_output\intermediate4_3:3:      : out is declared here as wire.
+3 error(s) during elaboration."
+intermediate5,1,Fail,"Vgen_output\intermediate5_1:26: syntax error
+I give up."
+intermediate5,2,No,
+intermediate5,3,No,
+intermediate6,1,Fail,"Vgen_output\intermediate6_1:8: syntax error
+Vgen_output\intermediate6_1:8: error: syntax error in continuous assignment"
+intermediate6,2,Fail,"Vgen_output\intermediate6_2:10: syntax error
+Vgen_output\intermediate6_2:10: error: syntax error in continuous assignment
+Vgen_output\intermediate6_2:31: syntax error
+I give up."
+intermediate6,3,Fail,"Vgen_output\intermediate6_3:9: error: q is not a valid l-value in tb_ram.UUT.
+Vgen_output\intermediate6_3:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,No,
+intermediate7,2,Fail,"Vgen_output\intermediate7_2:71: syntax error
+I give up."
+intermediate7,3,No,
+intermediate8,1,Fail,"Vgen_output\intermediate8_1:30: syntax error
+I give up."
+intermediate8,2,Fail,"Vgen_output\intermediate8_2:15: syntax error
+I give up."
+intermediate8,3,No,

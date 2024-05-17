@@ -1,0 +1,244 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,Fail,"llama2-13b-FT\advanced1_1:19: syntax error
+I give up."
+advanced1,2,No,
+advanced1,3,Fail,"llama2-13b-FT\advanced1_3:264: syntax error
+I give up."
+advanced2,1,Fail,"llama2-13b-FT\advanced2_1:8: syntax error
+I give up."
+advanced2,2,No,
+advanced2,3,No,
+advanced3,1,Fail,"llama2-13b-FT\advanced3_1:14: syntax error
+llama2-13b-FT\advanced3_1:14: error: Invalid module instantiation
+llama2-13b-FT\advanced3_1:17: syntax error
+llama2-13b-FT\advanced3_1:17: error: invalid module item.
+llama2-13b-FT\advanced3_1:18: syntax error
+llama2-13b-FT\advanced3_1:18: error: invalid module item.
+llama2-13b-FT\advanced3_1:19: syntax error
+llama2-13b-FT\advanced3_1:19: error: invalid module item.
+llama2-13b-FT\advanced3_1:20: syntax error
+llama2-13b-FT\advanced3_1:23: error: invalid module item."
+advanced3,2,Fail,"llama2-13b-FT\advanced3_2:22: syntax error
+llama2-13b-FT\advanced3_2:22: error: Invalid module instantiation
+llama2-13b-FT\advanced3_2:25: syntax error
+llama2-13b-FT\advanced3_2:25: error: invalid module item.
+llama2-13b-FT\advanced3_2:26: syntax error
+llama2-13b-FT\advanced3_2:26: error: invalid module item.
+llama2-13b-FT\advanced3_2:27: syntax error
+llama2-13b-FT\advanced3_2:27: error: invalid module item.
+llama2-13b-FT\advanced3_2:28: syntax error
+llama2-13b-FT\advanced3_2:28: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\advanced3_2:28: error: invalid module item.
+llama2-13b-FT\advanced3_2:29: syntax error
+llama2-13b-FT\advanced3_2:32: error: invalid module item.
+llama2-13b-FT\advanced3_2:121: syntax error
+I give up."
+advanced3,3,Yes,
+advanced4,1,Fail,"llama2-13b-FT\advanced4_1:269: syntax error
+I give up."
+advanced4,2,Fail,"llama2-13b-FT\advanced4_2:271: syntax error
+I give up."
+advanced4,3,Fail,"llama2-13b-FT\advanced4_3:272: syntax error
+I give up."
+advanced5,1,Fail,"llama2-13b-FT\advanced5_1:20: syntax error
+llama2-13b-FT\advanced5_1:20: error: Invalid module instantiation
+llama2-13b-FT\advanced5_1:23: syntax error
+llama2-13b-FT\advanced5_1:23: error: invalid module item.
+llama2-13b-FT\advanced5_1:24: syntax error
+llama2-13b-FT\advanced5_1:24: error: invalid module item.
+llama2-13b-FT\advanced5_1:25: syntax error
+llama2-13b-FT\advanced5_1:25: error: invalid module item.
+llama2-13b-FT\advanced5_1:26: syntax error
+llama2-13b-FT\advanced5_1:26: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\advanced5_1:26: error: invalid module item.
+llama2-13b-FT\advanced5_1:27: syntax error
+llama2-13b-FT\advanced5_1:30: error: invalid module item."
+advanced5,2,Fail,"llama2-13b-FT\advanced5_2:21: syntax error
+llama2-13b-FT\advanced5_2:21: error: Invalid module instantiation
+llama2-13b-FT\advanced5_2:24: syntax error
+llama2-13b-FT\advanced5_2:24: error: invalid module item.
+llama2-13b-FT\advanced5_2:25: syntax error
+llama2-13b-FT\advanced5_2:25: error: invalid module item.
+llama2-13b-FT\advanced5_2:26: syntax error
+llama2-13b-FT\advanced5_2:26: error: invalid module item.
+llama2-13b-FT\advanced5_2:27: syntax error
+llama2-13b-FT\advanced5_2:27: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\advanced5_2:27: error: invalid module item.
+llama2-13b-FT\advanced5_2:28: syntax error
+I give up."
+advanced5,3,Fail,"llama2-13b-FT\advanced5_3:16: syntax error
+llama2-13b-FT\advanced5_3:16: error: Invalid module instantiation
+llama2-13b-FT\advanced5_3:19: syntax error
+llama2-13b-FT\advanced5_3:19: error: invalid module item.
+llama2-13b-FT\advanced5_3:20: syntax error
+llama2-13b-FT\advanced5_3:20: error: invalid module item.
+llama2-13b-FT\advanced5_3:21: syntax error
+llama2-13b-FT\advanced5_3:21: error: invalid module item.
+llama2-13b-FT\advanced5_3:22: syntax error
+llama2-13b-FT\advanced5_3:22: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\advanced5_3:22: error: invalid module item.
+llama2-13b-FT\advanced5_3:23: syntax error
+llama2-13b-FT\advanced5_3:26: error: invalid module item."
+basic1,1,Fail,"llama2-13b-FT\basic1_1:6: error: Module definition wire_assign_inv cannot nest into module wire_assign.
+llama2-13b-FT\basic1_1:10: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:14: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:18: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:22: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:26: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:30: error: Module definition wire_assign_inv cannot nest into module wire_assign_inv.
+llama2-13b-FT\basic1_1:30: syntax error
+I give up."
+basic1,2,Fail,"llama2-13b-FT\basic1_2:7: error: Module definition wire_assign_delay cannot nest into module wire_assign.
+llama2-13b-FT\basic1_2:8: syntax error
+llama2-13b-FT\basic1_2:1: Errors in port declarations.
+llama2-13b-FT\basic1_2:14: error: Module definition wire_assign_reverse_delay cannot nest into module wire_assign_delay.
+llama2-13b-FT\basic1_2:15: syntax error
+llama2-13b-FT\basic1_2:1: Errors in port declarations.
+llama2-13b-FT\basic1_2:21: error: Module definition wire_assign_reverse_delay_inv cannot nest into module wire_assign_reverse_delay.
+llama2-13b-FT\basic1_2:22: syntax error
+llama2-13b-FT\basic1_2:1: Errors in port declarations.
+llama2-13b-FT\basic1_2:27: syntax error
+I give up."
+basic1,3,Fail,"llama2-13b-FT\basic1_3:7: error: Module definition wire_assign_delay cannot nest into module wire_assign.
+llama2-13b-FT\basic1_3:8: syntax error
+llama2-13b-FT\basic1_3:1: Errors in port declarations.
+llama2-13b-FT\basic1_3:14: error: Module definition wire_assign_delay_async_reset cannot nest into module wire_assign_delay.
+llama2-13b-FT\basic1_3:15: syntax error
+llama2-13b-FT\basic1_3:1: Errors in port declarations.
+llama2-13b-FT\basic1_3:24: error: Module definition wire_assign_delay_sync_reset cannot nest into module wire_assign_delay_async_reset.
+llama2-13b-FT\basic1_3:25: syntax error
+I give up."
+basic2,1,Yes,
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,Fail,"llama2-13b-FT\basic3_1:18: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:18: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:19: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:19: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:20: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:20: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:21: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:21: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:22: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:22: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:23: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:23: warning: Numeric constant truncated to 2 bits.
+llama2-13b-FT\basic3_1:24: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_1:24: syntax error
+I give up."
+basic3,2,Fail,"llama2-13b-FT\basic3_2:17: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:18: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:19: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:20: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:21: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:22: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:23: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:24: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_2:24: syntax error
+I give up."
+basic3,3,Fail,"llama2-13b-FT\basic3_3:20: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:21: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:22: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:23: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:24: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:25: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:26: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:27: warning: Numeric constant truncated to 3 bits.
+llama2-13b-FT\basic3_3:27: syntax error
+I give up."
+basic4,1,Yes,
+basic4,2,Yes,
+basic4,3,Yes,
+intermediate1,1,Fail,"llama2-13b-FT\intermediate1_1:7: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\intermediate1_1:8: warning: Using SystemVerilog 'N bit vector.  Use at least -g2005-sv to remove this warning.
+llama2-13b-FT\intermediate1_1:7: error: cout is not a valid l-value in tb_half_adder.UUT.
+llama2-13b-FT\intermediate1_1:3:      : cout is declared here as wire.
+llama2-13b-FT\intermediate1_1:8: error: sum is not a valid l-value in tb_half_adder.UUT.
+llama2-13b-FT\intermediate1_1:3:      : sum is declared here as wire.
+llama2-13b-FT\intermediate1_1:6: warning: @* found no sensitivities so it will never trigger.
+2 error(s) during elaboration."
+intermediate1,2,Yes,
+intermediate1,3,Fail,"llama2-13b-FT\intermediate1_3:263: syntax error
+I give up."
+intermediate2,1,No,
+intermediate2,2,No,
+intermediate2,3,Yes,
+intermediate3,1,Fail,"llama2-13b-FT\intermediate3_1:19: syntax error
+llama2-13b-FT\intermediate3_1:19: error: Invalid module instantiation
+llama2-13b-FT\intermediate3_1:21: error: Invalid module instantiation
+llama2-13b-FT\intermediate3_1:22: error: Invalid module instantiation
+llama2-13b-FT\intermediate3_1:25: error: invalid module item."
+intermediate3,2,Fail,"llama2-13b-FT\intermediate3_2:30: syntax error
+I give up."
+intermediate3,3,No,
+intermediate4,1,Fail,"llama2-13b-FT\intermediate4_1:11: syntax error
+llama2-13b-FT\intermediate4_1:11: error: Invalid module instantiation
+llama2-13b-FT\intermediate4_1:14: error: invalid module item.
+llama2-13b-FT\intermediate4_1:15: syntax error
+llama2-13b-FT\intermediate4_1:18: error: invalid module item."
+intermediate4,2,Fail,"llama2-13b-FT\intermediate4_2:3: syntax error
+llama2-13b-FT\intermediate4_2:3: error: Invalid module instantiation
+llama2-13b-FT\intermediate4_2:6: error: invalid module item.
+llama2-13b-FT\intermediate4_2:7: syntax error
+llama2-13b-FT\intermediate4_2:7: error: invalid module item.
+llama2-13b-FT\intermediate4_2:8: syntax error
+llama2-13b-FT\intermediate4_2:12: error: invalid module item.
+llama2-13b-FT\intermediate4_2:13: syntax error
+llama2-13b-FT\intermediate4_2:13: error: invalid module item.
+llama2-13b-FT\intermediate4_2:14: syntax error
+llama2-13b-FT\intermediate4_2:18: error: invalid module item.
+llama2-13b-FT\intermediate4_2:19: syntax error
+llama2-13b-FT\intermediate4_2:19: error: invalid module item.
+llama2-13b-FT\intermediate4_2:20: syntax error
+llama2-13b-FT\intermediate4_2:20: error: invalid module item.
+llama2-13b-FT\intermediate4_2:21: syntax error
+I give up."
+intermediate4,3,Fail,"llama2-13b-FT\intermediate4_3:10: syntax error
+llama2-13b-FT\intermediate4_3:10: error: Invalid module instantiation
+llama2-13b-FT\intermediate4_3:13: error: invalid module item.
+llama2-13b-FT\intermediate4_3:14: syntax error
+I give up."
+intermediate5,1,No,
+intermediate5,2,Fail,"llama2-13b-FT\intermediate5_2:180: syntax error
+I give up."
+intermediate5,3,No,
+intermediate6,1,No,
+intermediate6,2,Fail,"llama2-13b-FT\intermediate6_2:7: error: q is not a valid l-value in tb_ram.UUT.
+llama2-13b-FT\intermediate6_2:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,3,Fail,"llama2-13b-FT\intermediate6_3:8: error: q is not a valid l-value in tb_ram.UUT.
+llama2-13b-FT\intermediate6_3:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,Yes,
+intermediate7,2,Fail,"llama2-13b-FT\intermediate7_2:40: syntax error
+llama2-13b-FT\intermediate7_2:40: error: Invalid module instantiation"
+intermediate7,3,Fail,"llama2-13b-FT\intermediate7_3:43: error: Increment/decrement operator requires SystemVerilog.
+llama2-13b-FT\intermediate7_3:45: syntax error
+llama2-13b-FT\intermediate7_3:45: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:46: syntax error
+llama2-13b-FT\intermediate7_3:46: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:47: syntax error
+llama2-13b-FT\intermediate7_3:47: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:48: syntax error
+llama2-13b-FT\intermediate7_3:48: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:49: syntax error
+llama2-13b-FT\intermediate7_3:49: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:50: syntax error
+llama2-13b-FT\intermediate7_3:50: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:51: syntax error
+llama2-13b-FT\intermediate7_3:51: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:52: syntax error
+llama2-13b-FT\intermediate7_3:52: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:53: syntax error
+llama2-13b-FT\intermediate7_3:53: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:54: syntax error
+llama2-13b-FT\intermediate7_3:54: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:55: syntax error
+llama2-13b-FT\intermediate7_3:55: error: Invalid module instantiation
+llama2-13b-FT\intermediate7_3:56: syntax error
+llama2-13b-FT\intermediate7_3:56: error: Invalid module instantiation
+I give up."
+intermediate8,1,Fail,"llama2-13b-FT\intermediate8_1:33: syntax error
+I give up."
+intermediate8,2,No,
+intermediate8,3,No,

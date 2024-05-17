@@ -1,0 +1,124 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,No,
+advanced1,2,Fail,"lora3_newData_50step_r128_temp05\advanced1_2:8: syntax error
+I give up."
+advanced1,3,Fail,"lora3_newData_50step_r128_temp05\advanced1_3:12: syntax error
+I give up."
+advanced2,1,Yes,
+advanced2,2,Yes,
+advanced2,3,No,
+advanced3,1,Fail,"lora3_newData_50step_r128_temp05\advanced3_1:28: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:28: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\advanced3_1:32: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:33: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:35: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:36: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:36: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:37: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:39: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:40: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:40: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:41: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:43: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:44: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:53: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:54: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:54: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:55: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:55: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:56: syntax error
+lora3_newData_50step_r128_temp05\advanced3_1:56: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_1:57: syntax error
+I give up."
+advanced3,2,Fail,"lora3_newData_50step_r128_temp05\advanced3_2:28: syntax error
+lora3_newData_50step_r128_temp05\advanced3_2:28: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\advanced3_2:31: syntax error
+lora3_newData_50step_r128_temp05\advanced3_2:31: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_2:32: syntax error
+lora3_newData_50step_r128_temp05\advanced3_2:32: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_2:33: syntax error
+lora3_newData_50step_r128_temp05\advanced3_2:33: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced3_2:34: syntax error
+lora3_newData_50step_r128_temp05\advanced3_2:39: error: invalid module item."
+advanced3,3,Yes,
+advanced4,1,Yes,
+advanced4,2,Yes,
+advanced4,3,Yes,
+advanced5,1,Fail,"lora3_newData_50step_r128_temp05\advanced5_1:18: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:18: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\advanced5_1:21: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:21: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_1:22: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:22: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_1:23: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:23: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_1:24: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:28: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_1:29: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:29: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_1:30: syntax error
+lora3_newData_50step_r128_temp05\advanced5_1:32: error: invalid module item."
+advanced5,2,Fail,"lora3_newData_50step_r128_temp05\advanced5_2:32: syntax error
+I give up."
+advanced5,3,Fail,"lora3_newData_50step_r128_temp05\advanced5_3:25: syntax error
+lora3_newData_50step_r128_temp05\advanced5_3:25: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\advanced5_3:28: syntax error
+lora3_newData_50step_r128_temp05\advanced5_3:28: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_3:29: syntax error
+lora3_newData_50step_r128_temp05\advanced5_3:29: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_3:30: syntax error
+lora3_newData_50step_r128_temp05\advanced5_3:30: error: invalid module item.
+lora3_newData_50step_r128_temp05\advanced5_3:31: syntax error
+lora3_newData_50step_r128_temp05\advanced5_3:33: error: invalid module item."
+basic1,1,Yes,
+basic1,2,Yes,
+basic1,3,Yes,
+basic2,1,Yes,
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,Yes,
+basic3,2,Fail,"lora3_newData_50step_r128_temp05\basic3_2:20: syntax error
+I give up."
+basic3,3,Fail,"lora3_newData_50step_r128_temp05\basic3_3:12: syntax error
+I give up."
+basic4,1,Fail,"lora3_newData_50step_r128_temp05\basic4_1:10: syntax error
+I give up."
+basic4,2,Fail,"lora3_newData_50step_r128_temp05\basic4_2:9: syntax error
+I give up."
+basic4,3,Fail,"lora3_newData_50step_r128_temp05\basic4_3:10: syntax error
+I give up."
+intermediate1,1,Fail,"lora3_newData_50step_r128_temp05\intermediate1_1:10: syntax error
+I give up."
+intermediate1,2,Yes,
+intermediate1,3,Yes,
+intermediate2,1,Yes,
+intermediate2,2,Yes,
+intermediate2,3,Yes,
+intermediate3,1,Fail,"lora3_newData_50step_r128_temp05\intermediate3_1:28: syntax error
+I give up."
+intermediate3,2,No,
+intermediate3,3,Fail,"lora3_newData_50step_r128_temp05\intermediate3_3:23: syntax error
+lora3_newData_50step_r128_temp05\intermediate3_3:23: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\intermediate3_3:25: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\intermediate3_3:26: error: Invalid module instantiation
+lora3_newData_50step_r128_temp05\intermediate3_3:29: error: invalid module item."
+intermediate4,1,Yes,
+intermediate4,2,Yes,
+intermediate4,3,Yes,
+intermediate5,1,Yes,
+intermediate5,2,Yes,
+intermediate5,3,Fail,"lora3_newData_50step_r128_temp05\intermediate5_3:21: syntax error
+I give up."
+intermediate6,1,Yes,
+intermediate6,2,Yes,
+intermediate6,3,Fail,"lora3_newData_50step_r128_temp05\intermediate6_3:10: error: q is not a valid l-value in tb_ram.UUT.
+lora3_newData_50step_r128_temp05\intermediate6_3:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,Fail,"lora3_newData_50step_r128_temp05\intermediate7_1:63: syntax error
+I give up."
+intermediate7,2,Yes,
+intermediate7,3,Fail,"lora3_newData_50step_r128_temp05\intermediate7_3:50: syntax error
+I give up."
+intermediate8,1,No,
+intermediate8,2,Yes,
+intermediate8,3,No,

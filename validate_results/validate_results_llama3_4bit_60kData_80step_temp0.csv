@@ -1,0 +1,86 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,Yes,
+advanced1,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\advanced1_2:22: syntax error
+I give up."
+advanced1,3,Fail,"lora_model_llama3-8B-60k-80steps_temp0\advanced1_3:21: syntax error
+I give up."
+advanced2,1,No,
+advanced2,2,No,
+advanced2,3,No,
+advanced3,1,No,
+advanced3,2,No,
+advanced3,3,Yes,
+advanced4,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\advanced4_1:22: error: part select q[1:63] is out of order.
+1 error(s) during elaboration."
+advanced4,2,No,
+advanced4,3,No,
+advanced5,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\advanced5_1:61: syntax error
+I give up."
+advanced5,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\advanced5_2:27: syntax error
+I give up."
+advanced5,3,Yes,
+basic1,1,Yes,
+basic1,2,Yes,
+basic1,3,Yes,
+basic2,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\basic2_1:8: error: Module definition or_gate cannot nest into module and_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:14: error: Module definition xor_gate cannot nest into module or_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:20: error: Module definition xnor_gate cannot nest into module xor_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:26: error: Module definition nand_gate cannot nest into module xnor_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:32: error: Module definition nor_gate cannot nest into module nand_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:38: error: Module definition aoi_gate cannot nest into module nor_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:44: error: Module definition oai_gate cannot nest into module aoi_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:50: error: Module definition aoi_gate cannot nest into module oai_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:56: error: Module definition oai_gate cannot nest into module aoi_gate.
+lora_model_llama3-8B-60k-80steps_temp0\basic2_1:57: syntax error
+I give up."
+basic2,2,Yes,
+basic2,3,Yes,
+basic3,1,No,
+basic3,2,No,
+basic3,3,Yes,
+basic4,1,Yes,
+basic4,2,Yes,
+basic4,3,Yes,
+intermediate1,1,Yes,
+intermediate1,2,Yes,
+intermediate1,3,Yes,
+intermediate2,1,No,
+intermediate2,2,No,
+intermediate2,3,Yes,
+intermediate3,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate3_1:46: error: 'feedback_value' has already been declared in this scope.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate3_1:9:      : It was declared here as a net.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate3_1:46: syntax error
+I give up."
+intermediate3,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate3_2:32: syntax error
+I give up."
+intermediate3,3,No,
+intermediate4,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate4_1:33: error: out is not a valid l-value in tb_simple_fsm.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_1:3:      : out is declared here as wire.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_1:36: error: out is not a valid l-value in tb_simple_fsm.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_1:3:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate4,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate4_2:36: syntax error
+I give up."
+intermediate4,3,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate4_3:37: error: out is not a valid l-value in tb_simple_fsm.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_3:3:      : out is declared here as wire.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_3:38: error: out is not a valid l-value in tb_simple_fsm.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate4_3:3:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate5,1,No,
+intermediate5,2,No,
+intermediate5,3,No,
+intermediate6,1,Yes,
+intermediate6,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate6_2:11: error: q is not a valid l-value in tb_ram.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate6_2:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,3,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate6_3:11: error: q is not a valid l-value in tb_ram.UUT.
+lora_model_llama3-8B-60k-80steps_temp0\intermediate6_3:3:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,No,
+intermediate7,2,Yes,
+intermediate7,3,Yes,
+intermediate8,1,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate8_1:13: syntax error
+I give up."
+intermediate8,2,Fail,"lora_model_llama3-8B-60k-80steps_temp0\intermediate8_2:15: syntax error
+I give up."
+intermediate8,3,No,

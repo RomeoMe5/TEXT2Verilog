@@ -1,0 +1,141 @@
+Subfolder,Code_Number,Test_Passed,Error
+advanced1,1,Fail,"Mistral-7b-verilog-temp0\advanced1_1:25: syntax error
+I give up."
+advanced1,2,Fail,"Mistral-7b-verilog-temp0\advanced1_2:25: syntax error
+I give up."
+advanced1,3,Fail,"Mistral-7b-verilog-temp0\advanced1_3:21: syntax error
+I give up."
+advanced2,1,No,
+advanced2,2,No,
+advanced2,3,No,
+advanced3,1,Fail,"Mistral-7b-verilog-temp0\advanced3_1:29: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Mistral-7b-verilog-temp0\advanced3_1:5:      : z is declared here as wire.
+1 error(s) during elaboration."
+advanced3,2,Fail,"Mistral-7b-verilog-temp0\advanced3_2:29: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Mistral-7b-verilog-temp0\advanced3_2:5:      : z is declared here as wire.
+1 error(s) during elaboration."
+advanced3,3,Yes,
+advanced4,1,No,
+advanced4,2,Fail,"Mistral-7b-verilog-temp0\advanced4_2:17: syntax error
+I give up."
+advanced4,3,No,
+advanced5,1,Fail,"Mistral-7b-verilog-temp0\advanced5_1:60: syntax error
+Mistral-7b-verilog-temp0\advanced5_1:64: error: invalid module item.
+Mistral-7b-verilog-temp0\advanced5_1:65: syntax error
+Mistral-7b-verilog-temp0\advanced5_1:66: error: invalid module item.
+Mistral-7b-verilog-temp0\advanced5_1:67: syntax error
+I give up."
+advanced5,2,Fail,"Mistral-7b-verilog-temp0\advanced5_2:17: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Mistral-7b-verilog-temp0\advanced5_2:6:      : z is declared here as wire.
+Mistral-7b-verilog-temp0\advanced5_2:22: error: z is not a valid l-value in tb_adv_fsm.UUT.
+Mistral-7b-verilog-temp0\advanced5_2:6:      : z is declared here as wire.
+2 error(s) during elaboration."
+advanced5,3,No,
+basic1,1,Yes,
+basic1,2,Yes,
+basic1,3,Yes,
+basic2,1,Fail,"Mistral-7b-verilog-temp0\basic2_1:8: error: Module definition or_gate cannot nest into module and_gate.
+Mistral-7b-verilog-temp0\basic2_1:14: error: Module definition xor_gate cannot nest into module or_gate.
+Mistral-7b-verilog-temp0\basic2_1:20: error: Module definition xnor_gate cannot nest into module xor_gate.
+Mistral-7b-verilog-temp0\basic2_1:26: error: Module definition nand_gate cannot nest into module xnor_gate.
+Mistral-7b-verilog-temp0\basic2_1:32: error: Module definition nor_gate cannot nest into module nand_gate.
+Mistral-7b-verilog-temp0\basic2_1:38: error: Module definition not_gate cannot nest into module nor_gate.
+Mistral-7b-verilog-temp0\basic2_1:43: error: Module definition mux2 cannot nest into module not_gate.
+Mistral-7b-verilog-temp0\basic2_1:47: syntax error
+I give up."
+basic2,2,Fail,"Mistral-7b-verilog-temp0\basic2_2:5: syntax error
+Mistral-7b-verilog-temp0\basic2_2:5: error: Invalid module instantiation"
+basic2,3,Fail,"Mistral-7b-verilog-temp0\basic2_3:5: syntax error
+Mistral-7b-verilog-temp0\basic2_3:5: error: Invalid module instantiation"
+basic3,1,No,
+basic3,2,No,
+basic3,3,Yes,
+basic4,1,No,
+basic4,2,Yes,
+basic4,3,Yes,
+intermediate1,1,Fail,"Mistral-7b-verilog-temp0\intermediate1_1:7: error: Module definition full_adder cannot nest into module half_adder.
+Mistral-7b-verilog-temp0\intermediate1_1:12: error: Module definition adder cannot nest into module full_adder.
+Mistral-7b-verilog-temp0\intermediate1_1:17: error: Module definition full_adder_4 cannot nest into module adder.
+Mistral-7b-verilog-temp0\intermediate1_1:22: error: Module definition adder_4 cannot nest into module full_adder_4.
+Mistral-7b-verilog-temp0\intermediate1_1:27: error: Module definition full_adder_4 cannot nest into module adder_4.
+Mistral-7b-verilog-temp0\intermediate1_1:32: error: Module definition adder_4 cannot nest into module full_adder_4.
+Mistral-7b-verilog-temp0\intermediate1_1:35: syntax error
+I give up."
+intermediate1,2,Fail,"Mistral-7b-verilog-temp0\intermediate1_2:8: error: Module definition full_adder cannot nest into module half_adder.
+Mistral-7b-verilog-temp0\intermediate1_2:14: error: Module definition adder cannot nest into module full_adder.
+Mistral-7b-verilog-temp0\intermediate1_2:20: error: Module definition adder_ci cannot nest into module adder.
+Mistral-7b-verilog-temp0\intermediate1_2:26: error: Module definition adder_co cannot nest into module adder_ci.
+Mistral-7b-verilog-temp0\intermediate1_2:29: syntax error
+I give up."
+intermediate1,3,No,
+intermediate2,1,No,
+intermediate2,2,No,
+intermediate2,3,Yes,
+intermediate3,1,Fail,"Mistral-7b-verilog-temp0\intermediate3_1:15: error: r_next is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_1:7:      : r_next is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate3_1:22: error: q is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_1:4:      : q is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate3_1:25: error: q is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_1:4:      : q is declared here as wire.
+3 error(s) during elaboration."
+intermediate3,2,Fail,"Mistral-7b-verilog-temp0\intermediate3_2:16: error: r_next is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_2:7:      : r_next is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate3_2:19: error: feedback_value is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_2:8:      : feedback_value is declared here as wire.
+2 error(s) during elaboration."
+intermediate3,3,Fail,"Mistral-7b-verilog-temp0\intermediate3_3:14: error: r_next is not a valid l-value in tb_lfsr.UUT.
+Mistral-7b-verilog-temp0\intermediate3_3:7:      : r_next is declared here as wire.
+1 error(s) during elaboration."
+intermediate4,1,Fail,"Mistral-7b-verilog-temp0\intermediate4_1:14: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_1:1:      : out is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate4_1:15: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_1:1:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate4,2,Fail,"Mistral-7b-verilog-temp0\intermediate4_2:17: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_2:1:      : out is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate4_2:20: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_2:1:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate4,3,Fail,"Mistral-7b-verilog-temp0\intermediate4_3:22: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_3:1:      : out is declared here as wire.
+Mistral-7b-verilog-temp0\intermediate4_3:23: error: out is not a valid l-value in tb_simple_fsm.UUT.
+Mistral-7b-verilog-temp0\intermediate4_3:1:      : out is declared here as wire.
+2 error(s) during elaboration."
+intermediate5,1,Fail,"Mistral-7b-verilog-temp0\intermediate5_1:22: syntax error
+Mistral-7b-verilog-temp0\intermediate5_1:22: error: Syntax error between internal '}' and closing '}' of repeat concatenation."
+intermediate5,2,Fail,"Mistral-7b-verilog-temp0\intermediate5_2:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_2:9:      : This msb expression violates the rule: (amount)-('sd1)
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_2:9:      : This lsb expression violates the rule: amount
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_2:9:      : This msb expression violates the rule: (amount)-('sd1)
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_2:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_2:9:      : This lsb expression violates the rule: amount
+8 error(s) during elaboration."
+intermediate5,3,Fail,"Mistral-7b-verilog-temp0\intermediate5_3:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_3:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_3:9:      : This msb expression violates the rule: (amount)-('sd1)
+Mistral-7b-verilog-temp0\intermediate5_3:9: error: A reference to a wire or reg (`amount') is not allowed in a constant expression.
+Mistral-7b-verilog-temp0\intermediate5_3:9: error: Part select expressions must be constant.
+Mistral-7b-verilog-temp0\intermediate5_3:9:      : This msb expression violates the rule: (amount)-('sd1)
+4 error(s) during elaboration."
+intermediate6,1,Fail,"Mistral-7b-verilog-temp0\intermediate6_1:12: error: q is not a valid l-value in tb_ram.UUT.
+Mistral-7b-verilog-temp0\intermediate6_1:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,2,Fail,"Mistral-7b-verilog-temp0\intermediate6_2:12: error: q is not a valid l-value in tb_ram.UUT.
+Mistral-7b-verilog-temp0\intermediate6_2:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate6,3,Fail,"Mistral-7b-verilog-temp0\intermediate6_3:12: error: q is not a valid l-value in tb_ram.UUT.
+Mistral-7b-verilog-temp0\intermediate6_3:2:      : q is declared here as wire.
+1 error(s) during elaboration."
+intermediate7,1,No,
+intermediate7,2,Yes,
+intermediate7,3,Yes,
+intermediate8,1,No,
+intermediate8,2,Fail,"Mistral-7b-verilog-temp0\intermediate8_2:32: syntax error
+I give up."
+intermediate8,3,No,
