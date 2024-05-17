@@ -37,7 +37,7 @@ from unsloth import FastLanguageModel
 
 # Загрузка модели и токенизатора
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name="lora_model",  # Укажите название вашей модели
+    model_name="Driseri/lora3_newData_50step_r128",  # Укажите название вашей модели
     max_seq_length=512,       # Максимальная длина последовательности
     dtype='fp16',             # Тип данных, например 'fp16' для снижения потребления памяти
     load_in_4bit=True         # Загрузка модели в 4-битном формате для уменьшения потребления памяти
