@@ -106,12 +106,4 @@ tokenizer = AutoTokenizer.from_pretrained("lora_model")
 - **validate_results**
   - Датасеты результатов валидации программ Verilog, сгенерированных разными моделями.
 
-📂 Verilog-eval-progs
-  📂 Vgen
-  📂 generate_verilog
-  📂 hdlbits-solutions
-  📂 notebooks
-  📂 scripts
-  📂 testbench
-  📂 validate_results
 
