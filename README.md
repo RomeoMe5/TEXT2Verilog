@@ -57,3 +57,19 @@ inputs = tokenizer(
 # Генерация вывода модели
 outputs = model.generate(**inputs, max_new_tokens=64, use_cache=True)
 print(tokenizer.batch_decode(outputs))
+
+## Альтернативный способ использования модели
+
+Вы также можете использовать `AutoModelForPeftCausalLM` от Hugging Face, если у вас не установлена библиотека Unsloth. Следует отметить, что этот метод может быть крайне медленным, так как поддержка загрузки моделей в 4-битном формате отсутствует и инференс в Unsloth происходит в два раза быстрее.
+
+```python
+# Я настоятельно не рекомендую - используйте Unsloth, если это возможно
+from peft import AutoPeftModelForCausalLM
+from transformers import AutoTokenizer
+
+# Загрузка модели и токенизатора без Unsloth
+model = AutoPeftModelForCausalLM.from_pretrained(
+    "lora_model",  # Укажите название вашей модели
+    load_in_4bit=False  # Загрузка в 4-битном формате не поддерживается
+)
+tokenizer = AutoTokenizer.from_pretrained("lora_model")
