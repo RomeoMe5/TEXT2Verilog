@@ -57,6 +57,7 @@ inputs = tokenizer(
 # Генерация вывода модели
 outputs = model.generate(**inputs, max_new_tokens=64, use_cache=True)
 print(tokenizer.batch_decode(outputs))
+```
 
 ## Альтернативный способ использования модели
 
@@ -73,3 +74,4 @@ model = AutoPeftModelForCausalLM.from_pretrained(
     load_in_4bit=False  # Загрузка в 4-битном формате не поддерживается
 )
 tokenizer = AutoTokenizer.from_pretrained("lora_model")
+
