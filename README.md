@@ -1,4 +1,24 @@
 # TEXT2Verilog
+
+# Summary
+
+This repository explores the task of **generating synthesizable Verilog code from natural language specifications**. The project aims to automate the process of transforming textual hardware requirements into Verilog modules, thereby reducing development time and the likelihood of design errors.  
+
+The work focuses on the use of **large language models (LLMs)** and **parameter-efficient fine-tuning methods** such as LoRA and QLoRA to adapt general-purpose models for hardware design tasks. A specialized dataset of Verilog code examples of varying complexity was collected, including both human-curated and machine-generated samples, to ensure the reliability and diversity of training data.  
+
+Evaluation was performed using **VerilogEval benchmarks** and custom testbenches to verify not only syntactic correctness but also the functional validity of generated code. The results demonstrate that LLM-based approaches can achieve competitive accuracy and efficiency in Verilog generation, highlighting their potential for **AI-driven computer-aided design (CAD) tools** and future digital circuit development workflows.  
+
+## Repository Contents
+The repository provides a comprehensive set of resources for reproducing and extending the project, including:
+- **Data collection scripts**: tools for extracting and preparing datasets used for model training.  
+- **Data preprocessing modules**: scripts for structuring datasets into formats suitable for LLM fine-tuning.  
+- **Model fine-tuning notebooks**: Jupyter notebooks for adapting LLMs (LoRA/QLoRA) to Verilog generation tasks.  
+- **Validation scripts**: evaluation pipelines to assess the accuracy and synthesizability of generated Verilog code.  
+- **Usage examples**: notebooks demonstrating how to generate Verilog modules from natural language descriptions.  
+- **Performance tests**: benchmarks for comparing different models on Verilog generation tasks.  
+
+---
+
 # Описание Репозитория
 
 Этот репозиторий представляет собой комплексное хранилище, содержащее все необходимые ресурсы для реализации проекта по генерации синтезируемого Verilog-кода из спецификаций на естественном языке. В репозитории вы найдете:
